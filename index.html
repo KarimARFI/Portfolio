@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Portfolio Karim</title>
+    <!-- Chargement de favicon -->
+    <link rel="icon" type="image/svg" sizes="96x96" href="Source/Logo_AK.svg"> <!-- size doit être un multiple de 16 -->
+    <!-- BOOTSTRAP CDN -->
+    <!-- cdn icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- cdn basique bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- cdn JS boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="">
+    <!-- CCS PERSO -->
+    <link rel="stylesheet" href="App/portofolio.css">
+    <!-- JAVASCRIPT PERSO -->
+    <!-- defer : chargement du JS en fin de DOM. pour lecture de tous les ID du HTML. -->
+    <!-- <script src="App/portofolio.js" defer></script> -->
+</head>
+<body>
+    <!-- ############################## -->
+    <!-- HEADER  -->
+    <!-- #############################  -->
+    <header>
+        <div class="container row justify-content-between">
+            <!-- ### CONTACT ### -->
+            <div class="accordion col-6 col-sm-4 col-md-3 col-lg-2" id="accordion1">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            Karim ARFI 
+                        </button>
+                    </h2>
+                    <!-- ### Developement ### -->
+                    <!-- insérer "show" dans la class pour que l'accordeonn soit ouvert par défaut -->
+                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <div class="container row">
+                                <!-- liste Contact -->
+                                <ul>
+                                    <li><a href=""><i class="bi bi-envelope-at-fill"></i> Mail</a></li>
+                                    <li><a href="https://github.com/KarimARFI" target="_blank" rel="noopener noreferrer nofollow"><i class="bi bi-github"></i> Git Hub</a></li>
+                                    <li><a href="https://www.linkedin.com/in/karim-arfi/"  target="_blank" rel="norefer noopener nofollow"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <p>Concepteur développeur d'applications<br>JAVA</p>
+            </div>
+        </div>
+    </header>
+    <!-- ##############################  -->
+    <!-- MAIN  -->
+    <!-- ##############################  -->
+    <main>
+        <div class="stage">
+            <p>Bonjour,&nbsp; je recherche un stage du : 2 Juillet au 22 Septembre.</p>
+        </div>
+        <!-- ### CARROUSSEL ### -->
+        <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <!-- Mettre en place une boucle JS ou jQuery avec element HTML -->
+            <!-- puce du carrousselle pour sauter sur une slide direct -->
+            <div class="carousel-inner">
+                <!-- Mettre en place une boucle + Json -->
+                <div class="carousel-item active " data-bs-interval="8000">
+                    <!-- caption -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                    <img src="../../00_FeuilleParDefaut/image-defaut/image_defaut.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                    <img src="../../00_FeuilleParDefaut/image-defaut/image_defaut.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                    <img src="../../00_FeuilleParDefaut/image-defaut/image_defaut.png" class="d-block w-100" alt="...">
+                </div>
+                <!-- FIN DE BOUCLE -->
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <!-- <span class="visually-hidden">Previous</span> -->
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <!-- <span class="visually-hidden">Next</span> -->
+            </button>
+        </div>
+        <!-- ### ACCORDEON ### -->
+        <div class="accordion" id="accordion">
+            <!-- ### REALISATION ### -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <!-- collapsed à la class pour faire pivoter la fleche de direction, aria-expanded="true" pour gérer la bonne ouverture -->
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <i class="bi bi-journal-bookmark-fill"></i> Réalisations
+                    </button>
+                </h2>
+                <!-- ajouter show dans la class apres collapse pour etre ouvert par defaut -->
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordion">
+                    <!-- Class gérant l'espace de vie du body -->
+                    <div class="accordion-body">
+                        <p><strong>Classé</strong> par ordre chronologique du plus récent.</p>
+                        <!-- Cards des réalisations -->
+                        <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
+                            <div class="col-md-6 mb-md-0 p-md-4">
+                                <img src="../../00_FeuilleParDefaut/image-defaut/image_defaut.png"
+                                class="w-100 mt-3" alt="...">
+                            </div>
+                            <div class="col-md-6 p-4 ps-md-0 text-light">
+                                <h5 class="mt-0">Columns with stretched link</h5>
+                                <p>Another instance here</p>
+                                <!-- Streched Link étire le lien pour qu'il soit actif sur tout le bloc parent en position relative-->
+                                <a href="#" class="stretched-link">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- 2nd cards -->
+                        <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
+                            <div class="col-md-6 mb-md-0 p-md-4">
+                                <img src="../../00_FeuilleParDefaut/image-defaut/image_defaut.png"
+                                    class="w-100 mt-3" alt="...">
+                            </div>
+                            <div class="col-md-6 p-4 ps-md-0 text-light">
+                                <h5 class="mt-0">Columns with stretched link</h5>
+                                <p>Another instance here</p>
+                                <a href="#" class="stretched-link">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- Fin des cards -->
+                    </div>
+                </div>
+            </div>
+            <!-- ### CONNAISSANCE ### -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="bi bi-gear-wide-connected"></i> Connaissances
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <div class="container row">
+                            <!-- Techno web -->
+                            <p><strong>Langages : front-end / back-end</front-end></strong></p>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Html 5.svg" alt="Icone html 5"></img>
+                                <figcaption class="d-sm-inline-block">HTML 5</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/CSS3.svg" alt="Icone CSS 3"></img>
+                                <figcaption class="d-sm-inline-block">CSS 3</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Bootstrap.svg" alt="Icone Bootstrap"></img>
+                                <figcaption class="d-sm-inline-block">Bootstrap</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/JavaScript.svg" alt="Icone JavaScript"></img>
+                                <figcaption class="d-sm-inline-block">Javascript</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/jquery.svg" alt="Icone jquery"></img>
+                                <figcaption class="d-sm-inline-block">jQuery</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/swing-01.svg" alt="Icone jquery"></img>
+                                <figcaption class="d-sm-inline-block">Swing</figcaption>
+                            </figure>
+                            <!-- BACK END -->
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/PHP Logo.svg" alt="Iocne PHP"></img>
+                                <figcaption class="d-sm-inline-block">PHP 7</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/MySQL Logo.svg" alt="Icone My MySQL"></img>
+                                <figcaption class="d-sm-inline-block">MySQL</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Java.svg" alt="Icone Java"></img>
+                                <figcaption class="d-sm-inline-block">Java 8</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/springboot.svg" alt="Icone springboot"></img>
+                                <figcaption class="d-sm-inline-block">spring Boot</figcaption>
+                            </figure>
+                            <hr>
+                            <!-- COLLABORATIF -->
+                            <p><strong>Collaboratifs : Environement / Versioning</strong></p>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Git.svg" alt="Icone Git"></img>
+                                <figcaption class="d-sm-inline-block">Git</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/GitHub.svg" alt="Icone GitHub"></img>
+                                <figcaption class="d-sm-inline-block">GitHub</figcaption>
+                            </figure>
+                            <!-- SOTWARE CODE -->
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/vscode.svg" alt="Icone GitHub"></img>
+                                <figcaption class="d-sm-inline-block">VsCode</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/techno/eclipse.svg" alt="Icone GitHub"></img>
+                                <figcaption class="d-sm-inline-block">Eclipse</figcaption>
+                            </figure>
+                            <hr>
+                            <!-- SUITE ADOBE -->
+                            <p><strong>logiciels : Adobe / Office</strong></p>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/adobe-xd.svg" alt="Icone Adobe Xd"></img>
+                                <figcaption class="d-sm-inline-block">Xd</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/adobe-illustrator.svg" alt="Icone Adobe Illustrator"></img>
+                                <figcaption class="d-sm-inline-block">Illustrator</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/adobe-photoshop.svg" alt="Icone Adobe Photoshop"></img>
+                                <figcaption class="d-sm-inline-block">Photoshop</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/adobe-indesign.svg" alt="Icone Adobe InDesign"></img>
+                                <figcaption class="d-sm-inline-block">InDesign</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/adobe-bridge.svg" alt="Icone Adobe Bridge"></img>
+                                <figcaption class="d-sm-inline-block">Bridge</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/adobe-acrobat.svg" alt="Icone Adobe Acrobat"></img>
+                                <figcaption class="d-sm-inline-block">Acrobat</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/figma.svg" alt="Icone figma"></img>
+                                <figcaption class="d-sm-inline-block">Figma</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/office-word.svg" alt="Icone figma"></img>
+                                <figcaption class="d-sm-inline-block">Word</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/office-excel.svg" alt="Icone figma"></img>
+                                <figcaption class="d-sm-inline-block">Excel</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/office-powerpoint.svg" alt="Icone figma"></img>
+                                <figcaption class="d-sm-inline-block">Power Point</figcaption>
+                            </figure>
+                            <figure class="col-6 col-sm-3 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/office-outlook.svg" alt="Icone figma"></img>
+                                <figcaption class="d-sm-inline-block">Outlook</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ### EXPERIENCE ### -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="bi bi-shop"></i> Expériences
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p><strong>Parcour profesionnel :</strong></p>
+                        <ul>
+                            <li>
+                                <b>2008 - présent :</b> Conseiller en communication print et digital.
+                                <ul>
+                                    <li>Conseil, gestion et accompagnement de projet.</li>
+                                    <li>Production d'articles imprimé et services digitaux.</li>
+                                </ul>
+                                <i>Copy-Top ®</i>
+                            </li>
+                            <li>
+                                <b>2004 - 2008 :</b> Gérant d’entreprise.
+                                <ul>
+                                    <li>Conception graphique pour décoration sur tous supports.</li>
+                                </ul>
+                                <i>Aéro-Kréation® SARL : Société de décoration graphique à l’aérographe. </i><br>
+                            </li>
+                            <li>
+                                <b>1996 - 2004 :</b> Chef d’équipe.
+                                <ul>
+                                    <li>Secteur Industriel plasturgie : Gestion d’atelier et parc machines.</li>
+                                    <li>Management de 10 à 20 personnes</li>
+                                </ul>
+                                <i>Diverses entreprises.</i>
+                            </li>
+                        </ul>
+                        <p><strong>Formation diplomante :</strong></p>
+                        <ul>
+                            <li>
+                                <b>2023 Bac +3 :</b> <i class="text-success">EN COURS DE FORMATION</i> Concepteur développeur d'application. <b>Spécialité : Java</b><br> <i>RNCP 31678 AFPA Paris 12.</i>
+                            </li>
+                            <li>
+                                <b>2019 Bac +2 : Intégrateur web</b><br> <i>RNCP 34393. 3W Academy.</i>
+                            </li>
+                            <li>
+                                <b>1999 Brevet de 1er Secours.</b><br> <i>Service militaire : 2éme Régiment du Génie de Metz.</i>
+                            </li>
+                            <li>
+                                <b>1996 BAC. PRO. Plasturgie</b> : Paris 13, lycée Barrault.<br> <i>Mention : A-Bien : option plastique et composite.</i>
+                            </li>
+                            <li>
+                                <b>1994 B.E.P – C.A.P Plasturgie</b> : Paris 13, lycée Barrault.
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ### HOBBIES ### -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFor">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
+                        <i class="bi bi-balloon-heart-fill"></i> Loisirs
+                    </button>
+                </h2>
+                <div id="collapseFor" class="accordion-collapse collapse" aria-labelledby="headingFor"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <div class="container row">
+                            <p><strong>Sports et passions : </strong></p>
+                            <figure class="col-4 col-md-2 col-lg-1">
+                                <img src="Image/loisir/loisir_vtt.svg" alt="Icone html 5"></img>
+                                <figcaption class="d-md-inline-block">VTT</figcaption>
+                            </figure>
+                            <figure class="col-4 col-md-2 col-lg-1">
+                                <img src="Image/loisir/loisir_cardio.svg" alt="Icone html 5"></img>
+                                <figcaption class="d-md-inline-block">Cardio</figcaption>
+                            </figure>
+                            <figure class="col-4 col-md-2 col-lg-1">
+                                <img src="Image/loisir/loisir_multimedia.svg" alt="Icone html 5"></img>
+                                <figcaption class="d-md-inline-block">Média</figcaption>
+                            </figure>
+                            <figure class="col-4 col-md-2 col-lg-1">
+                                <img src="Image/loisir/loisir_dessin.svg" alt="Icone html 5"></img>
+                                <figcaption class="d-md-inline-block">Dessin</figcaption>
+                            </figure>
+                            <figure class="col-4 col-md-2 col-lg-1">
+                                <img src="Image/loisir/loisir_manga.svg" alt="Icone html 5"></img>
+                                <figcaption class="d-md-inline-block">Manga</figcaption>
+                            </figure>
+                            <figure class="col-4 col-md-2 col-lg-1">
+                                <img src="Image/loisir/loisir_japon.svg" alt="Icone html 6"></img>
+                                <figcaption class="d-md-inline-block">Japon</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ### BOGRAPHIE ### -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <i class="bi bi-person-lines-fill"></i> Biographie
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p><strong>Quoi, Quand, Pourquoi</strong></p>
+                        <img src="image/image_bio_sepia.png" alt="">
+                        <ul>
+                            <li>Passionné de nouvelle technologie et de graphisme depuis mon adolescence en autodidacte.</li>
+                            <li>Tous a commencé par le petit modem Olitec 56K. Avec cette nouvelle technologie apportant toujours plus d'informations en accés direct chez soi. Celle-ci m'a ouvert un champs des possibles, dans lequel j'ai plongé et découvert un monde d'échange et de connaissances. Le temps passant, naviguant sur la "toile". Passionné par le dessin et le graphisme. Sauvegardant tous un tas d'images manga. pour les redessiner sur logiciels de l'epoque comme Corel Draw.</li>
+                            <li>J'ai réalisé mon 1er site web <i>(2001 sous dreamweaver)</i> lors de ma création d'entreprise. Avec mes connaissances trop basiques en conception web. Manipulant aussi Illustrator, InDesign et Photoshop. Je suis resté sur un logiciel de la suite Adobe qui m'était familière. Mon site est resté sur le modèle d'un site vitrine standard. je me suis rapidement rendu compte que ce logiciel ne m'apporterais pas ce que recherchais.</li>
+                            <li> Utilisant de plus en plus les logiciels graphique. J'ai pris la voie du graphisme print. Pour lier ma passion à un métier pouvant rendre "matériel" mes projets numérique. Je travaille depuis 15 ans en tant que conseillé print et digital. Ce qui me permet de créer et imprimer certain de mes projets.</li>
+                            <li>Le monde évoluant, une technologie ranplacant la précédente. J'ai décidé de me former à la programmation web. Avec une première formation en tant que développeur/intégrateur m'a permis d'acquérir les compétences nécessaire pour développer des sites vitrine et interactif, attrayant. Aujourd'hui Je continue sur une formation de concepteur développeur d'applications, spécialisé en Java. </li>
+                            <li>Ainsi le développement m'apporte satisfaction sur les deux domaines. Aussi bien sur la partie visuelle: front-end, très lié au graphisme et sur la partie back-end: fonctionnel, lié à la conception.</li>
+                            <li>Cherchant chaque jour à améliorer mes connaissances, pour trouver les meilleures solutions afin de créer des sites web attirant performant et agréable d'utilisation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ##############################  -->
+    <!-- FOOTER -->
+    <!-- ##############################  -->
+    <footer>
+        <!-- ### RESEAUX SOCIAUX ### -->
+        <div id="social">
+            <a href="https://github.com/KarimARFI" target="_blank" rel="norefer noopener nofollow"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/karim-arfi/" target="_blank" rel="norefer noopener nofollow"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.behance.net/aerokrea" target="_blank" rel="norefer noopener nofollow"><i class="bi bi-behance"></i></a>
+            <a href=""><i class="bi bi-twitter"></i></a>
+        </div>
+        <!-- ### STRUCTURE ### -->
+        <section class="container" id="structure">
+            <div class="col" >
+                <p><i class="bi bi-diagram-2"></i>Structure :</p>
+                <ul>
+                    <li><a href="#headingOne" ><i class="bi bi-journal-bookmark-fill"></i>Réalisations</a></li>
+                    <li><a href="#headingTwo"><i class="bi bi-gear-wide-connected"></i>Connaissances</a></li>
+                    <li><a href="#headingThree"><i class="bi bi-shop"></i>Expériences</a></li>
+                    <li><a href="#headingFor"><i class="bi bi-balloon-heart-fill"></i>Loisirs</a></li>
+                    <li><a href="#headingFive"><i class="bi bi-person-lines-fill"></i>Biographie</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <p><i class="bi bi-download"></i>Telechargement.</p>
+                <ul>
+                    <li><i class="bi bi-file-earmark-code"></i>Curriculum vitae</li>
+                    <li><i class="bi bi-brush"></i>Portofolio graphiste</li>
+                </ul>
+            </div>
+            <div class="col">
+                <p><i class="bi bi-globe"></i>Another worlds</p>
+                <ul>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                </ul>
+            </div>
+            <div class="col" id="test">
+                <p><i class="bi bi-hypnotize"></i>To be continued</p>
+                <ul>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                </ul>
+            </div>
+        </section>
+        <!-- ### BOUTTON TOP ### -->
+        <div id="top">
+            <a href="#"><i class="bi bi-arrow-up-circle-fill"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

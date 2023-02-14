@@ -1,0 +1,289 @@
+/*####################*/
+/* IMPORT */
+/*####################*/
+@font-face {
+    font-family: "Comfortaa";
+    src: url(../Source/Comfortaa.ttf);
+    font-style: normal;
+}
+
+/*########################################*/
+/* COMMUN */
+/*########################################*/
+*, h1, h2, h3, h4, h5, h6, p, ul, .container-fluid, .row{ /* efface aussi celle de BootStrap */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 500;
+    max-width: unset;
+}
+body{
+    background-color: rgb(251, 224, 188);
+    min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/*########################################*/
+/* HEADER */
+/*########################################*/
+header{
+    padding: 20px 2vw;
+    min-height: 165px;
+    background-image: url(../Image/backend.jpg);
+    background-color: antiquewhite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 1px solid grey;
+    box-shadow: 0 1px 5px 1px grey;
+}
+#accordion1{
+    /* annulation du bg bootstrap blanc par defaut */
+    --bs-accordion-bg: unset
+}
+#collapse1 .accordion-body{
+    background-color: rgba(79, 47, 47, 0.5);
+    color: whitesmoke;
+    border-radius: 0 0 5px 5px;
+}
+/* titre CDA */
+header div div p{
+    text-align:end;
+    font-size: smaller;
+    ;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+#collapse1 ul, #collapseThree ul{
+    list-style: none;
+    padding-left: 0.8rem;
+}
+
+/*########################################*/
+/* MAIN */
+/*########################################*/
+main{
+    padding: 2vh 5vw;
+    position: relative;
+}
+.stage{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 1px black;
+    border: 2px solid rgb(8, 110, 144);
+    background: linear-gradient(rgb(60 120, 215), rgb(59, 114, 192, 0.8));
+    border-radius: 10px;
+    margin: 0.5rem auto;
+    padding: 0.2rem;
+}
+/* ### CAROUSEL ### */
+.carousel{
+    border-radius: 20px;
+    border: 2px solid rgba(79, 47, 47, 0.5);
+    margin-bottom: 1rem;
+    overflow: hidden;
+    max-height: 400px;
+}
+/* ### ACCORDEON modification Bootstrap */
+.accordion{
+    --bs-accordion-active-color: darkslategray;
+    --bs-accordion-active-bg: rgb(255, 210, 150);
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+/* partie sup de l'accordeon */
+.accordion-button{
+    color: darkslategray;
+    background-color: antiquewhite;
+    padding: 1vh;
+    --bs-accordion-btn-color: darkslategray;
+    /* font-weight: bold; */
+    position: sticky;
+    top: 0px;
+}
+.accordion-body{
+    color: darkslategray;
+    background-color:rgb(255, 245, 210);
+    padding: 0.5rem;
+}
+.accordion button i{
+    margin-right: 0.8rem;
+}
+.accordion-body p{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    border-bottom: 2px solid;
+}
+.accordion-body .container{
+    margin: 0;
+    padding: 0;
+}
+.accordion-collapse tr{
+    display: flex;
+    flex-direction: row;
+}
+.accordion-collapse tr td, .accordion-collapse tr th{
+    display: flex;
+    flex-direction: row;
+}
+.accordion-body figure{
+    text-align: center;
+    vertical-align: bottom;
+}
+.accordion-body .container figure img{
+    width: 100%;
+}
+.accordion-body .container figure figcaption{
+    font-size: 1rem;
+}
+.accordion-body figcaption{
+    display: none;
+}
+.accordion-body ul {
+    /* list-style: none; */
+    padding-left: 2rem;
+}
+.accordion-body ul li{
+    margin-bottom: 1rem;
+}
+.accordion-body ul ul{
+    list-style: none;
+    padding-left: 0;
+}
+.accordion-body ul ul li::before{
+    list-style: none;
+    content: "- ";
+}
+/* PHOTO bio */
+img[src="image/image_bio_sepia.png"]{
+    max-width: 40%;
+    float: left;
+    margin: 0.3rem 0.8rem;
+}
+
+/*########################################*/
+/* FOOTER */
+/*########################################*/
+footer{
+    /* height: 1800px; */
+    background-color: rgb(70, 70, 70);
+    /* border-top: 2px solid rgb(60, 60, 60); */
+    box-shadow: 0 -1px 5px 1px grey;
+    color: lightgrey;
+}
+/* SOCIAL */
+#social{
+    width: 100%;
+    padding: 0.5vmin;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(65, 65, 70);
+}
+#social i{
+    margin: 0 2vmin
+}
+footer section div{
+    padding: 1rem;
+}
+/* STRUCTURE */
+#structure{
+    font-size: 1rem;
+}
+#structure div p i{
+    border-right: 2px solid grey;
+    margin-right: 0.5rem;
+    padding-right: 0.5rem;
+}
+#structure ul{
+    list-style: none;
+}
+#structure div ul li{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+#structure div ul li i{
+    margin-right: 0.5rem;
+}
+
+/* BOUTON TOP */
+#top{
+    color: darkslategray;
+    background-color: antiquewhite;
+    padding: 0.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid darkslategray;
+}
+.bi-arrow-up-circle-fill{
+    position: absolute;
+    font-size: 16px;
+    transform: translate(-10%, -20%);
+}
+
+/*########################################*/
+/* MEDIA QUERIE Bootstrap */
+/* xs <576 | sm 576 | md 768, lg 992, xl 1200, xxl 1400 */
+/*########################################*/
+
+/* xs = Extra-Small devices (landscape phones, 575px and up) */
+@media (max-width: 320px) {
+    header .accordion{
+        width: 100%;
+    }
+    header div div.col{
+        display: none;
+    }
+}
+
+/* sm = Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    header div div p{
+        font-size: larger;
+    }
+}
+
+/* md = Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header{
+        padding: 2vh 5vw;
+    }
+    header div div p{
+        font-size: larger;
+    }
+    img[src="image/image_bio_sepia.png"]{
+        max-width: 20%;
+        float: left;
+        margin: 1rem 2rem;
+    }
+    footer #structure{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* lg = Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* xl = Extra-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
+
+/* xxl = Extra-Extra-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    
+}

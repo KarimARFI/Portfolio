@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="Outlook_1_">
+	<g>
+		<path fill="#FFFFFF" d="M17.952,76.406c0,2.893,2.292,5.244,5.129,5.244H78.02c2.832,0,5.129-2.352,5.129-5.244V20.244
+			c0-2.898-2.297-5.244-5.129-5.244H23.081c-2.837,0-5.129,2.346-5.129,5.244V76.406z"/>
+		<path fill="none" stroke="#1C71B7" stroke-width="2.8151" stroke-miterlimit="10" d="M17.952,76.406
+			c0,2.893,2.292,5.244,5.129,5.244H78.02c2.832,0,5.129-2.352,5.129-5.244V20.244c0-2.898-2.297-5.244-5.129-5.244H23.081
+			c-2.837,0-5.129,2.346-5.129,5.244V76.406z"/>
+		<rect x="44.217" y="36.822" fill="#FFFFFF" width="28.52" height="20.3"/>
+		
+			<rect x="44.217" y="36.822" fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" width="28.52" height="20.3"/>
+		<polygon fill="#FFFFFF" points="72.736,36.822 61.158,54.322 49.113,36.854 		"/>
+		<polygon fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-linejoin="round" stroke-miterlimit="10" points="
+			72.736,36.822 61.158,54.322 49.113,36.854 		"/>
+		<line fill="#FFFFFF" x1="70.228" y1="53.569" x2="52.597" y2="53.569"/>
+		
+			<line fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" x1="70.228" y1="53.569" x2="52.597" y2="53.569"/>
+		<rect x="41.38" y="41.689" fill="#FFFFFF" width="25.538" height="19.755"/>
+		
+			<rect x="41.38" y="41.689" fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" width="25.538" height="19.755"/>
+		<line fill="#FFFFFF" x1="63.274" y1="55.652" x2="45.632" y2="55.652"/>
+		
+			<line fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" x1="63.274" y1="55.652" x2="45.632" y2="55.652"/>
+		<line fill="#FFFFFF" x1="63.274" y1="58.318" x2="45.632" y2="58.318"/>
+		
+			<line fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" x1="63.274" y1="58.318" x2="45.632" y2="58.318"/>
+		<polygon fill="#FFFFFF" points="66.012,41.775 54.031,50.397 42.056,41.777 		"/>
+		<polygon fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" points="66.012,41.775 54.031,50.397 
+			42.056,41.777 		"/>
+		<polygon fill="#FFFFFF" points="29.709,63.336 53.131,67.152 53.131,29.506 29.709,33.496 		"/>
+		<polygon fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" points="29.709,63.336 53.131,67.152 
+			53.131,29.506 29.709,33.496 		"/>
+		<g>
+			<path fill="#1C71B7" d="M35.268,48.399c0-1.313,0.192-2.42,0.58-3.31c0.288-0.66,0.678-1.25,1.178-1.773
+				c0.494-0.521,1.039-0.911,1.629-1.162c0.791-0.342,1.699-0.51,2.726-0.51c1.859,0,3.35,0.59,4.466,1.768
+				c1.119,1.181,1.681,2.827,1.681,4.927c0,2.086-0.556,3.718-1.662,4.894c-1.113,1.178-2.593,1.76-4.45,1.76
+				c-1.875,0-3.371-0.576-4.482-1.746C35.823,52.07,35.268,50.457,35.268,48.399z M37.898,48.312c0,1.462,0.331,2.57,0.988,3.329
+				c0.66,0.753,1.502,1.127,2.52,1.127s1.852-0.374,2.503-1.125c0.651-0.742,0.978-1.869,0.978-3.365c0-1.483-0.32-2.586-0.95-3.315
+				c-0.636-0.729-1.478-1.093-2.53-1.093s-1.899,0.369-2.537,1.106C38.222,45.715,37.898,46.826,37.898,48.312z"/>
+		</g>
+	</g>
+	<g>
+		<defs>
+			<path id="SVGID_7_" d="M15,43.663V85h70V43.663c0,0-14.185,5.552-34.701,0.006c-6.836-1.852-13.041-2.472-18.27-2.472
+				C21.569,41.197,15,43.663,15,43.663"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_7_"  overflow="visible"/>
+		</clipPath>
+		<path clip-path="url(#SVGID_2_)" fill="#1C71B7" d="M16.312,77.816c0,3.043,2.407,5.509,5.386,5.509h57.704
+			c2.976,0,5.388-2.466,5.388-5.509V18.83c0-3.039-2.412-5.505-5.388-5.505H21.697c-2.979,0-5.386,2.466-5.386,5.505V77.816z"/>
+		<rect x="44.217" y="36.822" clip-path="url(#SVGID_2_)" fill="#FFFFFF" width="28.52" height="20.3"/>
+		<polygon clip-path="url(#SVGID_2_)" fill="#FFFFFF" points="73.145,37.229 61.158,54.322 49.186,37.229 		"/>
+		<polygon clip-path="url(#SVGID_2_)" fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" points="
+			73.145,37.229 61.158,54.322 49.186,37.229 		"/>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" x1="70.228" y1="53.569" x2="52.597" y2="53.569"/>
+		<rect x="41.38" y="41.689" clip-path="url(#SVGID_2_)" fill="#FFFFFF" width="25.538" height="19.755"/>
+		
+			<rect x="41.38" y="41.689" clip-path="url(#SVGID_2_)" fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" width="25.538" height="19.755"/>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" x1="63.274" y1="55.652" x2="45.632" y2="55.652"/>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" x1="63.274" y1="58.318" x2="45.632" y2="58.318"/>
+		<polygon clip-path="url(#SVGID_2_)" fill="#FFFFFF" points="66.012,41.775 54.031,50.397 42.056,41.777 		"/>
+		<polygon clip-path="url(#SVGID_2_)" fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" points="
+			66.012,41.775 54.031,50.397 42.056,41.777 		"/>
+		<polygon clip-path="url(#SVGID_2_)" fill="#FFFFFF" points="29.709,63.336 53.131,67.152 53.131,29.506 29.709,33.496 		"/>
+		<polygon clip-path="url(#SVGID_2_)" fill="none" stroke="#1C71B7" stroke-width="1.2968" stroke-miterlimit="10" points="
+			29.709,63.336 53.131,67.152 53.131,29.506 29.709,33.496 		"/>
+		<g clip-path="url(#SVGID_2_)">
+			<path fill="#1C71B7" d="M35.268,48.399c0-1.313,0.192-2.42,0.58-3.31c0.288-0.66,0.678-1.25,1.178-1.773
+				c0.494-0.521,1.039-0.911,1.629-1.162c0.791-0.342,1.699-0.51,2.726-0.51c1.859,0,3.35,0.59,4.466,1.768
+				c1.119,1.181,1.681,2.827,1.681,4.927c0,2.086-0.556,3.718-1.662,4.894c-1.113,1.178-2.593,1.76-4.45,1.76
+				c-1.875,0-3.371-0.576-4.482-1.746C35.823,52.07,35.268,50.457,35.268,48.399z M37.898,48.312c0,1.462,0.331,2.57,0.988,3.329
+				c0.66,0.753,1.502,1.127,2.52,1.127s1.852-0.374,2.503-1.125c0.651-0.742,0.978-1.869,0.978-3.365c0-1.483-0.32-2.586-0.95-3.315
+				c-0.636-0.729-1.478-1.093-2.53-1.093s-1.899,0.369-2.537,1.106C38.222,45.715,37.898,46.826,37.898,48.312z"/>
+		</g>
+	</g>
+</g>
+</svg>

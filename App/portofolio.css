@@ -3,7 +3,7 @@
 /*####################*/
 @font-face {
     font-family: "Comfortaa";
-    src: url(../Source/Comfortaa.ttf);
+    src: url(../Source/Comfortaa-VariableFont_wght.ttf);
     font-style: normal;
 }
 
@@ -17,6 +17,7 @@
     font-family: "Comfortaa", sans-serif;
     font-weight: 500;
     max-width: unset;
+    letter-spacing: 0.5px ;
 }
 body{
     background-color: rgb(251, 224, 188);
@@ -55,11 +56,13 @@ header{
 }
 /* titre CDA */
 header div div p{
-    text-align:end;
-    font-size: smaller;
-    ;
-    color: white;
-    text-shadow: 2px 2px 2px black;
+    text-align:center;
+    font-size: 1rem;
+    color: whitesmoke;
+    background-color: rgba(79, 47, 47, 0.7);
+    margin: 0.5rem auto;
+    border-radius: 10px;
+    padding: 0.5rem;
 }
 #collapse1 ul, #collapseThree ul{
     list-style: none;
@@ -75,14 +78,14 @@ main{
 }
 .stage{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: rgb(255, 255, 255);
     text-shadow: 1px 2px 1px black;
     border: 2px solid rgb(8, 110, 144);
-    background: linear-gradient(rgb(60 120, 215), rgb(59, 114, 192, 0.8));
-    border-radius: 10px;
+    background: linear-gradient(rgb(241, 201, 69, 0.8), rgb(237, 107, 42, 0.5));
+    border-radius: 20px;
     margin: 0.5rem auto;
-    padding: 0.2rem;
+    padding: 1rem;
 }
 /* ### CAROUSEL ### */
 .carousel{
@@ -151,7 +154,7 @@ main{
     /* list-style: none; */
     padding-left: 2rem;
 }
-.accordion-body ul li{
+main .accordion-body ul li{
     margin-bottom: 1rem;
 }
 .accordion-body ul ul{
@@ -236,15 +239,25 @@ footer section div{
 /* MEDIA QUERIE Bootstrap */
 /* xs <576 | sm 576 | md 768, lg 992, xl 1200, xxl 1400 */
 /*########################################*/
-
-/* xs = Extra-Small devices (landscape phones, 575px and up) */
-@media (max-width: 320px) {
+/* media querie perso */
+@media (max-width: 340px) {
     header .accordion{
         width: 100%;
     }
-    header div div.col{
-        display: none;
+    
+}
+
+@media (min-width: 341px){
+    header div div p{
+        text-align: end;
+        background-color: unset;
+        text-shadow: 2px 1px black;
     }
+}
+
+/* xs = Extra-Small devices (landscape phones, 575px and up) */
+@media (max-width: 575px) {
+
 }
 
 /* sm = Small devices (landscape phones, 576px and up) */

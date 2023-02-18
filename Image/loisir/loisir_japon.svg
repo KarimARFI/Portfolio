@@ -2,32 +2,31 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-<path fill="#FFFFFF" stroke="#3D3838" stroke-width="7.3794" stroke-miterlimit="10" d="M99.999,189.229
-	C50.376,189.229,10,149.219,10,100c0-49.22,40.376-89.228,89.999-89.228C149.624,10.772,190,50.78,190,100
-	C190,149.219,149.624,189.229,99.999,189.229"/>
+	 width="100px" height="100px" viewBox="50 650.5 100 100" enable-background="new 50 650.5 100 100" xml:space="preserve">
+<path fill="#FFFFFF" stroke="#3D3838" stroke-width="3.7056" stroke-miterlimit="10" d="M99.999,745.5
+	C75.188,745.5,55,725.321,55,700.5c0-24.822,20.188-45,44.999-45c24.813,0,45.001,20.178,45.001,45
+	C145,725.321,124.813,745.5,99.999,745.5"/>
 <g id="japon_2_">
 	<g>
-		<defs>
-			<rect id="SVGID_1_" x="40.734" y="60.781" width="61.12" height="90.937"/>
-		</defs>
-		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_1_"  overflow="visible"/>
-		</clipPath>
-		<g transform="matrix(1 0 0 1 0 3.814697e-006)" clip-path="url(#SVGID_2_)" enable-background="new    ">
-			
-				<image overflow="visible" width="285" height="242" xlink:href="9D0BFDC.jpeg"  transform="matrix(0.4783 0 0 0.474 31.5493 41.3838)">
-			</image>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="70.366" y="680.721" width="30.562" height="45.862"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  overflow="visible"/>
+			</clipPath>
+			<g transform="matrix(1 0 0 1 0 3.814697e-006)" clip-path="url(#SVGID_2_)" enable-background="new    ">
+			</g>
 		</g>
 	</g>
-	<path fill="#3D3838" d="M152.594,44.382c3.639,27.738,7.262,55.741,10.896,84.132c-39.162-9.687-78.327,23.063-117.508,22.568
-		c-3.638-27.544-7.269-55.476-10.898-83.604C74.249,74.829,113.428,41.85,152.594,44.382 M155.602,41.08
-		C114.1,36.541,72.614,73.881,31.163,63.033c3.938,30.918,7.859,61.297,11.813,91.423c41.483,2.426,82.969-34.665,124.451-21.271
-		C163.475,102.021,159.538,71.365,155.602,41.08"/>
-	<path fill="#EC1C24" d="M131.182,87.31c2.342,17.333-10.035,33.89-27.647,40.41c-17.604,6.646-33.776-3.003-36.123-20.442
-		C65.056,90.018,77.43,73,95.027,66.41C112.641,59.623,128.826,69.765,131.182,87.31"/>
+	<path fill="#3D3838" d="M126.297,672.45c1.819,13.989,3.632,28.112,5.447,42.431c-19.58-4.886-39.163,11.632-58.753,11.381
+		c-1.819-13.891-3.635-27.978-5.449-42.164C87.125,687.807,106.713,671.173,126.297,672.45 M127.802,670.787
+		c-20.751-2.291-41.494,16.542-62.221,11.07c1.969,15.591,3.93,30.913,5.907,46.104c20.741,1.224,41.485-17.482,62.224-10.727
+		C131.737,701.52,129.77,686.06,127.802,670.787"/>
+	<path fill="#EC1C24" d="M115.59,694.102c1.173,8.741-5.017,17.091-13.821,20.377c-8.802,3.354-16.888-1.513-18.062-10.309
+		c-1.178-8.703,5.008-17.286,13.807-20.608C106.321,680.138,114.412,685.252,115.59,694.102"/>
 	
-		<path fill="none" stroke="#3D3838" stroke-width="6.8455" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" d="
-		M42.704,152.313c-3.806-29.039-7.602-58.323-11.4-88.136"/>
+		<path fill="none" stroke="#3D3838" stroke-width="3.4375" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+		M71.352,726.882c-1.903-14.645-3.801-29.412-5.7-44.447"/>
 </g>
 </svg>

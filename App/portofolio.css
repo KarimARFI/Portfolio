@@ -20,9 +20,22 @@
     --bg1: rgb(200, 200, 200);
     --bg2: rgb(240, 240, 240,)
 }
+@font-face{
+    font-family: "Urbanist-italic";
+    src: url(../Source/Urbanist-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+:root{
+    --bg1: rgb(200, 200, 200);
+    --bg2: rgb(240, 240, 240,)
+}
 /*########################################*/
 /* COMMUN */
 /*########################################*/
+/* div{
+    border: 1px solid red;
+    display: inline-block;
+} */
 *, h1, h2, h3, h4, h5, h6, p, ul, .container-fluid, .row{ /* efface aussi celle de BootStrap */
     box-sizing: border-box;
     margin: 0;
@@ -95,7 +108,7 @@ main{
 }
 #stage p{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 2px;
     color: whitesmoke;
@@ -121,9 +134,7 @@ main{
     --bs-accordion-btn-focus-border-color: none;
     --bs-accordion-btn-focus-box-shadow: none;
 }
-div{
-    border: 1px solid red;
-}
+
 /* partie sup de l'accordeon */
 .accordion-button{
     color: darkslategray;
@@ -166,8 +177,12 @@ div{
     font-size: 1rem;
     display: none;
 }
-#collapseTwo .container.row{
-    /* display: inline-block; */
+/* zone Experience */
+#collapseThree .accordion-body ul{
+    padding-left: 1rem;
+}
+main .accordion-body ul li{
+    margin-bottom: 1rem;
 }
 /* zone Experience */
 #collapseThree .accordion-body ul{
@@ -265,7 +280,6 @@ footer section div{
     header .accordion{
         width: 100%;
     }
-    
 }
 
 @media (min-width: 341px){
@@ -279,14 +293,34 @@ footer section div{
 }
 
 /* xs = Extra-Small devices (landscape phones, 575px and up) */
-@media (max-width: 575px) {
+@media (min-width: 575px) {
+    header div div p{
+        font-size: 2rem;
+    }
+    footer #structure{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    footer #structure div{
+        flex-basis: 50%;
+    }
 
 }
 
 /* sm = Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    header div div p{
-        font-size: 2rem;
+    #stage p{
+        font-size: 1.5rem;
+    }
+    footer #structure{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    footer #structure div{
+        flex-basis: auto;
     }
 }
 
@@ -295,22 +329,18 @@ footer section div{
     header{
         padding: 2vh 5vw;
     }
+    #stage p{
+        font-size: 1.8rem;
+    }
     img[src="image/image_bio_sepia.png"]{
         max-width: 20%;
         float: left;
         margin: 1rem 2rem;
     }
-    footer #structure{
-        display: flex;
-        flex-direction: row;
-    }
 }
 
 /* lg = Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    #stage{
-        font-size: 1.5rem;
-    }
 }
 
 /* xl = Extra-Large devices (large desktops, 1200px and up) */

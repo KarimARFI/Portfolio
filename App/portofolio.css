@@ -123,10 +123,6 @@ main{
 }
 div{
     border: 1px solid red;
-<<<<<<< HEAD
-    /* display: inline-block; */
-=======
->>>>>>> c0c7bcd976accf3bbc5984cd04b71cc7e9426547
 }
 /* partie sup de l'accordeon */
 .accordion-button{

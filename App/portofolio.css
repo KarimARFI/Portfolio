@@ -1,12 +1,25 @@
 /*####################*/
 /* IMPORT */
 /*####################*/
-@font-face {
+/* @font-face {
     font-family: "Comfortaa";
     src: url(../Source/Comfortaa-VariableFont_wght.ttf);
     font-style: normal;
+} */
+@font-face {
+    font-family: "Urbanist";
+    src: url(../Source/Urbanist-VariableFont_wght.ttf);
+    font-style: normal;
 }
-
+@font-face{
+    font-family: "Urbanist-italic";
+    src: url(../Source/Urbanist-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+:root{
+    --bg1: rgb(200, 200, 200);
+    --bg2: rgb(240, 240, 240,)
+}
 /*########################################*/
 /* COMMUN */
 /*########################################*/
@@ -14,21 +27,25 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 500;
+    /* font-family: "Comfortaa", sans-serif; */
+    font-family: "Urbanist", sans-serif;
+    font-weight: normal;
     max-width: unset;
     letter-spacing: 0.5px ;
 }
 body{
-    background-color: rgb(251, 224, 188);
+    background-color: var(--bg1);
     min-height: 100vh;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 }
 a{
     text-decoration: none;
-    color: inherit;
-    display: block;
+    color: unset;
+    /* display: block; */
+}
+a:hover{
+    color: #ffac11;
 }
 
 /*########################################*/
@@ -59,10 +76,10 @@ header div div p{
     text-align:center;
     font-size: 1rem;
     color: whitesmoke;
-    background-color: rgba(79, 47, 47, 0.7);
+    padding: 0.5rem;
     margin: 0.5rem auto;
     border-radius: 10px;
-    padding: 0.5rem;
+    background-color: rgba(79, 47, 47, 0.7);
 }
 #collapse1 ul, #collapseThree ul{
     list-style: none;
@@ -76,13 +93,15 @@ main{
     padding: 2vh 5vw;
     position: relative;
 }
-.stage{
+#stage p{
     text-align: center;
     font-size: 1.2rem;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 2px 1px black;
-    border: 2px solid rgb(8, 110, 144);
-    background: linear-gradient(rgb(241, 201, 69, 0.8), rgb(237, 107, 42, 0.5));
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    text-shadow: 1px 2px 1px rgb(20, 36, 183);
+    border: 2px solid rgb(65, 165, 200);
+    background: linear-gradient(rgba(70, 165, 240, 0.8), rgba(40, 160, 240, 0.5));
     border-radius: 20px;
     margin: 0.5rem auto;
     padding: 1rem;
@@ -95,12 +114,19 @@ main{
     overflow: hidden;
     max-height: 400px;
 }
-/* ### ACCORDEON modification Bootstrap */
+/* ### ACCORDEON variable Bootstrap */
 .accordion{
     --bs-accordion-active-color: darkslategray;
     --bs-accordion-active-bg: rgb(255, 210, 150);
     --bs-accordion-btn-focus-border-color: none;
     --bs-accordion-btn-focus-box-shadow: none;
+}
+div{
+    border: 1px solid red;
+<<<<<<< HEAD
+    /* display: inline-block; */
+=======
+>>>>>>> c0c7bcd976accf3bbc5984cd04b71cc7e9426547
 }
 /* partie sup de l'accordeon */
 .accordion-button{
@@ -123,53 +149,48 @@ main{
 .accordion-body p{
     font-size: 1rem;
     margin: 0.5rem 0;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
+    font-weight: 900;
 }
+/* valable sur Zone connaissance, hobby */
 .accordion-body .container{
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
 }
-.accordion-collapse tr{
-    display: flex;
-    flex-direction: row;
-}
-.accordion-collapse tr td, .accordion-collapse tr th{
-    display: flex;
-    flex-direction: row;
-}
+/* zone connaissance */
 .accordion-body figure{
     text-align: center;
     vertical-align: bottom;
 }
 .accordion-body .container figure img{
+    display: block;
     width: 100%;
 }
 .accordion-body .container figure figcaption{
     font-size: 1rem;
-}
-.accordion-body figcaption{
     display: none;
 }
-.accordion-body ul {
-    /* list-style: none; */
-    padding-left: 2rem;
+#collapseTwo .container.row{
+    /* display: inline-block; */
 }
-main .accordion-body ul li{
-    margin-bottom: 1rem;
+/* zone Experience */
+#collapseThree .accordion-body ul{
+    padding-left: 1rem;
 }
-.accordion-body ul ul{
-    list-style: none;
-    padding-left: 0;
+#collapseThree .accordion-body ul li:last-child{
+    margin-bottom: 0.5rem;
 }
-.accordion-body ul ul li::before{
-    list-style: none;
+#collapseThree .accordion-body ul ul li::before{
     content: "- ";
 }
-/* PHOTO bio */
+/* zone biographie */
 img[src="image/image_bio_sepia.png"]{
-    max-width: 40%;
+    max-width: 35%;
     float: left;
-    margin: 0.3rem 0.8rem;
+    margin: 0.3rem 2rem;
+}
+#collapseFive .accordion-body ul li{
+    margin-bottom: 0.5rem;
 }
 
 /*########################################*/
@@ -200,6 +221,9 @@ footer section div{
 #structure{
     font-size: 1rem;
 }
+#structure div p{
+    font-weight: 600;
+}
 #structure div p i{
     border-right: 2px solid grey;
     margin-right: 0.5rem;
@@ -207,6 +231,7 @@ footer section div{
 }
 #structure ul{
     list-style: none;
+    padding-left: 1.5rem;
 }
 #structure div ul li{
     font-size: 0.8rem;
@@ -249,6 +274,8 @@ footer section div{
 
 @media (min-width: 341px){
     header div div p{
+        padding: unset;
+        margin: unset;
         text-align: end;
         background-color: unset;
         text-shadow: 2px 1px black;
@@ -263,7 +290,7 @@ footer section div{
 /* sm = Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     header div div p{
-        font-size: larger;
+        font-size: 2rem;
     }
 }
 
@@ -271,9 +298,6 @@ footer section div{
 @media (min-width: 768px) {
     header{
         padding: 2vh 5vw;
-    }
-    header div div p{
-        font-size: larger;
     }
     img[src="image/image_bio_sepia.png"]{
         max-width: 20%;
@@ -288,7 +312,9 @@ footer section div{
 
 /* lg = Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+    #stage{
+        font-size: 1.5rem;
+    }
 }
 
 /* xl = Extra-Large devices (large desktops, 1200px and up) */

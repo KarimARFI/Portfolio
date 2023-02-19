@@ -46,6 +46,10 @@
     max-width: unset;
     letter-spacing: 0.5px ;
 }
+*[id^="collapse"] ul{
+    list-style: none;
+    padding-left: 0.8rem;
+}
 body{
     background-color: var(--bg1);
     min-height: 100vh;
@@ -94,10 +98,6 @@ header div div p{
     border-radius: 10px;
     background-color: rgba(79, 47, 47, 0.7);
 }
-#collapse1 ul, #collapseThree ul{
-    list-style: none;
-    padding-left: 0.8rem;
-}
 
 /*########################################*/
 /* MAIN */
@@ -141,28 +141,22 @@ main{
     background-color: antiquewhite;
     padding: 1vh;
     --bs-accordion-btn-color: darkslategray;
-    /* font-weight: bold; */
     position: sticky;
     top: 0px;
+}
+.accordion button i{
+    margin-right: 0.8rem;
 }
 .accordion-body{
     color: darkslategray;
     background-color:rgb(255, 245, 210);
     padding: 0.5rem;
 }
-.accordion button i{
-    margin-right: 0.8rem;
-}
 .accordion-body p{
     font-size: 1rem;
     margin: 0.5rem 0;
     border-bottom: 1px solid;
     font-weight: 900;
-}
-/* valable sur Zone connaissance, hobby */
-.accordion-body .container{
-    margin: 0;
-    /* padding: 0; */
 }
 /* zone connaissance */
 .accordion-body figure{
@@ -178,16 +172,6 @@ main{
     display: none;
 }
 /* zone Experience */
-#collapseThree .accordion-body ul{
-    padding-left: 1rem;
-}
-main .accordion-body ul li{
-    margin-bottom: 1rem;
-}
-/* zone Experience */
-#collapseThree .accordion-body ul{
-    padding-left: 1rem;
-}
 #collapseThree .accordion-body ul li:last-child{
     margin-bottom: 0.5rem;
 }
@@ -319,6 +303,9 @@ footer section div{
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+    .accordion li{
+        font-size: 1.2rem;
+    }
     footer #structure div{
         flex-basis: auto;
     }
@@ -337,10 +324,16 @@ footer section div{
         float: left;
         margin: 1rem 2rem;
     }
+    .accordion li{
+        font-size: 1.3rem;
+    }
 }
 
 /* lg = Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .accordion li{
+        font-size: 1.5rem;
+    }
 }
 
 /* xl = Extra-Large devices (large desktops, 1200px and up) */

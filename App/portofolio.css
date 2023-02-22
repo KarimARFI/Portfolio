@@ -20,15 +20,6 @@
     --bg1: rgb(200, 200, 200);
     --bg2: rgb(240, 240, 240,)
 }
-@font-face{
-    font-family: "Urbanist-italic";
-    src: url(../Source/Urbanist-Italic-VariableFont_wght.ttf);
-    font-style: italic;
-}
-:root{
-    --bg1: rgb(200, 200, 200);
-    --bg2: rgb(240, 240, 240,)
-}
 /*########################################*/
 /* COMMUN */
 /*########################################*/
@@ -70,7 +61,7 @@ a:hover{
 /*########################################*/
 header{
     padding: 20px 2vw;
-    min-height: 165px;
+    /* min-height: fit-content; */
     background-image: url(../Image/backend.jpg);
     background-color: antiquewhite;
     background-size: cover;
@@ -90,15 +81,35 @@ header{
 }
 /* titre CDA */
 header div div p{
-    text-align:center;
-    font-size: 1rem;
+    text-align: center;
+    font-size: auto;
     color: whitesmoke;
     padding: 0.5rem;
     margin: 0.5rem auto;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: rgba(79, 47, 47, 0.7);
 }
-
+button[data-bs-toggle="modal"]{
+    background-color: rgba(160, 231, 235, 0.8);
+    border: 2px solid rgb(85, 127, 130);
+    color: rgb(19, 46, 155);
+    text-shadow: 1px 2px 1px whitesmoke;
+    font-weight: 600;
+    margin: 0 auto;
+    
+}
+/* ### stage ### */
+button[data-bs-toggle="modal"]:hover{
+    background-color: rgb(75, 231, 239);
+    border: 2px solid rgb(71, 101, 176);
+    color: rgb(52, 76, 171);
+}
+.modal-header{
+    background-color: rgba(160, 231, 235, 0.8);
+}
+.modal-body{
+    margin-left: 1.5rem;
+}
 /*########################################*/
 /* MAIN */
 /*########################################*/
@@ -106,26 +117,14 @@ main{
     padding: 2vh 5vw;
     position: relative;
 }
-#stage p{
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: whitesmoke;
-    text-shadow: 1px 2px 1px rgb(20, 36, 183);
-    border: 2px solid rgb(65, 165, 200);
-    background: linear-gradient(rgba(70, 165, 240, 0.8), rgba(40, 160, 240, 0.5));
-    border-radius: 20px;
-    margin: 0.5rem auto;
-    padding: 1rem;
-}
+
 /* ### CAROUSEL ### */
 .carousel{
     border-radius: 20px;
     border: 2px solid rgba(79, 47, 47, 0.5);
     margin-bottom: 1rem;
     overflow: hidden;
-    max-height: 400px;
+    /* height: 550px; */
 }
 /* ### ACCORDEON variable Bootstrap */
 .accordion{
@@ -141,7 +140,6 @@ main{
     background-color: antiquewhite;
     padding: 1vh;
     --bs-accordion-btn-color: darkslategray;
-    position: sticky;
     top: 0px;
 }
 .accordion button i{
@@ -155,20 +153,27 @@ main{
 .accordion-body p{
     font-size: 1rem;
     margin: 0.5rem 0;
-    border-bottom: 1px solid;
     font-weight: 900;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, darkslategray, transparent 100%)1;
 }
 /* zone connaissance */
 .accordion-body figure{
     text-align: center;
-    vertical-align: bottom;
+}
+.accordion-body div span{
+    color: hwb(34 20% 20%);
+    font-weight: 600;
+    padding-bottom: 0.3rem;
 }
 .accordion-body .container figure img{
     display: block;
     width: 100%;
 }
 .accordion-body .container figure figcaption{
-    font-size: 1rem;
+    color: grey;
+    font-size: 0.9rem;
+    font-style: italic;
     display: none;
 }
 /* zone Experience */
@@ -185,20 +190,25 @@ img[src="image/image_bio_sepia.png"]{
     margin: 0.3rem 2rem;
 }
 #collapseFive .accordion-body ul li{
+    list-style-type:circle;
     margin-bottom: 0.5rem;
+    margin-left: 1rem;;
+}
+audio{
+    width: 30%;
+    display: block;
 }
 
 /*########################################*/
 /* FOOTER */
 /*########################################*/
 footer{
-    /* height: 1800px; */
     background-color: rgb(70, 70, 70);
-    /* border-top: 2px solid rgb(60, 60, 60); */
     box-shadow: 0 -1px 5px 1px grey;
     color: lightgrey;
+    position: relative;
 }
-/* SOCIAL */
+/* ### SOCIAL ### */
 #social{
     width: 100%;
     padding: 0.5vmin;
@@ -212,7 +222,7 @@ footer{
 footer section div{
     padding: 1rem;
 }
-/* STRUCTURE */
+/* ### STRUCTURE ### */
 #structure{
     font-size: 1rem;
 }
@@ -236,7 +246,7 @@ footer section div{
     margin-right: 0.5rem;
 }
 
-/* BOUTON TOP */
+/* ### BOUTON TOP ### */
 #top{
     color: darkslategray;
     background-color: antiquewhite;
@@ -244,7 +254,7 @@ footer section div{
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 1rem;
-    position: fixed;
+    position: absolute;
     bottom: 10px;
     right: 10px;
     border: 1px solid darkslategray;
@@ -265,21 +275,15 @@ footer section div{
         width: 100%;
     }
 }
-
+/* media queries perso pour la gestion du titre CDA et du texte en footer */
 @media (min-width: 341px){
     header div div p{
+        font-size: 2rem;
         padding: unset;
         margin: unset;
         text-align: end;
         background-color: unset;
         text-shadow: 2px 1px black;
-    }
-}
-
-/* xs = Extra-Small devices (landscape phones, 575px and up) */
-@media (min-width: 575px) {
-    header div div p{
-        font-size: 2rem;
     }
     footer #structure{
         display: flex;
@@ -289,22 +293,26 @@ footer section div{
     footer #structure div{
         flex-basis: 50%;
     }
-
 }
 
 /* sm = Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     #stage p{
         font-size: 1.5rem;
+        display: block;
+    }
+    #carousel{
+        width: 60%;
+        margin: 0 auto 1rem;
+    }
+    .accordion li{
+        font-size: 1.2rem;
     }
     footer #structure{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    }
-    .accordion li{
-        font-size: 1.2rem;
     }
     footer #structure div{
         flex-basis: auto;
@@ -317,15 +325,29 @@ footer section div{
         padding: 2vh 5vw;
     }
     #stage p{
-        font-size: 1.8rem;
+        font-size: 1rem;
+    }
+    .accordion li{
+        font-size: 1.3rem;
     }
     img[src="image/image_bio_sepia.png"]{
         max-width: 20%;
         float: left;
         margin: 1rem 2rem;
     }
-    .accordion li{
-        font-size: 1.3rem;
+    audio{
+        /* width: 20%; */
+        height: 20px;
+        display: inline;
+    }
+    #top{
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 32px;
+    }
+    .bi-arrow-up-circle-fill{
+        font-size: 1.6rem;
+        transform: translate(-2%, -16%);
     }
 }
 
@@ -334,10 +356,22 @@ footer section div{
     .accordion li{
         font-size: 1.5rem;
     }
+    #top{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 32px;
+    }
+    .bi-arrow-up-circle-fill{
+        font-size: 2rem;
+        transform: translate(7%, -11%);
+    }
 }
 
 /* xl = Extra-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    .accordion-button{
+        position: sticky;
+    }
     
 }
 

@@ -13,7 +13,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- cdn JS boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="">
     <!-- CCS PERSO -->
     <link rel="stylesheet" href="App/portofolio.css">
     <!-- JAVASCRIPT PERSO -->
@@ -24,18 +23,18 @@
     <!-- ############################## -->
     <!-- HEADER  -->
     <!-- #############################  -->
+    <!-- Modal -->
     <header>
-        <!-- ### CONTACT ### -->
         <div class="container row justify-content-between">
-            <div class="accordion col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="accordion1">
+            <!-- ### CONTACT ### -->
+            <div class="accordion col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-2" id="accordion1">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="heading1">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
                             Karim ARFI 
                         </button>
                     </h2>
-                    <!-- ### Developement ### -->
-                    <!-- insérer "show" dans la class pour que l'accordeonn soit ouvert par défaut -->
+                    <!-- "show" permet de rester ouvert au load -->
                     <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordion">
                         <div class="accordion-body">
                             <div class="container row">
@@ -50,8 +49,36 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <!-- #### HEADER FLEX INFO DROITE ### -->
+            <div class="container col">
                 <p>Concepteur développeur d'applications Java</p>
+                <!-- Bouton modal -->
+                <button type="button" class="btn w-100"  data-bs-toggle="modal" data-bs-target="#Modal">
+                    Demande de stage <i class="bi bi-info-circle"></i>
+                </button>
+            </div>
+            <!-- ### MODAL ### -->
+            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ModalLabel">Les avantage de mon stage :</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li><i class="bi bi-calendar3"></i> Période du 3 juillet au 22 septembre 2023.</li>
+                            <li><i class="bi bi-file-earmark-text"></i> Convention de stage de 3 mois. <i>(centre AFPA Paris 12)</i>.</li>
+                            <li><i class="bi bi-currency-euro"></i> Non rémunéré !</li>
+                            <li><i class="bi bi-calendar-month"></i> Disponible durant les congés</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Me contacter</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </header>
@@ -59,10 +86,6 @@
     <!-- MAIN  -->
     <!-- ##############################  -->
     <main>
-        <!-- ### STAGE ### -->
-        <div id="stage">
-            <p>Bonjour,&nbsp; je suis à la recherche d'un stage du : 2 juillet au 22 septembre.</p>
-        </div>
         <!-- ### CARROUSSEL ### -->
         <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <!-- Mettre en place une boucle JS ou jQuery avec element HTML -->
@@ -110,8 +133,8 @@
         <!-- ### ACCORDEON ### -->
         <div class="accordion" id="accordion">
             <!-- ### REALISATION ### -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
+            <div class="accordion-item ">
+                <h2 class="accordion-header sticky-top" id="headingOne">
                     <!-- collapsed à la class pour faire pivoter la fleche de direction, aria-expanded="true" pour gérer la bonne ouverture -->
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -155,150 +178,148 @@
             </div>
             <!-- ### CONNAISSANCE ### -->
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
+                <h2 class="accordion-heade sticky-top" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <i class="bi bi-gear-wide-connected"></i> Connaissances
                     </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
                     data-bs-parent="#accordion">
                     <div class="accordion-body row">
                         <!-- LANGAGES -->
-                        <p><strong>Langages :</front-end></strong></p>
-                            <!-- FRONT END -->
-                            <div class="container row">
-                                <span>Front-end</span>
-                                <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                    <img src="Image/techno/Html 5.svg" alt="Icone html 5"></img>
-                                    <figcaption class="d-sm-inline-block">HTML 5</figcaption>
-                                </figure>
-                                <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                    <img src="Image/techno/CSS3.svg" alt="Icone CSS 3"></img>
-                                    <figcaption class="d-sm-inline-block">CSS 3</figcaption>
-                                </figure>
-                                <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                    <img src="Image/techno/Bootstrap.svg" alt="Icone Bootstrap"></img>
-                                    <figcaption class="d-sm-inline-block">Bootstrap</figcaption>
-                                </figure>
-                                <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                    <img src="Image/techno/JavaScript.svg" alt="Icone JavaScript"></img>
-                                    <figcaption class="d-sm-inline-block">Javascript</figcaption>
-                                </figure>
-                                <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                    <img src="Image/techno/jquery.svg" alt="Icone jquery"></img>
-                                    <figcaption class="d-sm-inline-block">jQuery</figcaption>
-                                </figure>
-                                <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                    <img src="Image/techno/swing.svg" alt="Icone jquery"></img>
-                                    <figcaption class="d-sm-inline-block">Swing</figcaption>
-                                </figure>
-                                <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                    <img src="Image/techno/ajax.svg" alt="Icone jquery"></img>
-                                    <figcaption class="d-sm-inline-block">Ajax</figcaption>
-                                </figure>
-                                <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                    <img src="Image/techno/json.svg" alt="Icone jquery"></img>
-                                    <figcaption class="d-sm-inline-block">Json</figcaption>
-                                </figure>
-                            </div>
-                        <!-- BACK END -->
-                             <div class="container row">
-                                <span>Back-end</span>
-                                <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                    <img src="Image/techno/PHP Logo.svg" alt="Iocne PHP"></img>
-                                    <figcaption class="d-sm-inline-block">PHP 7</figcaption>
-                                </figure>
-                                <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                    <img src="Image/techno/MySQL.svg" alt="Icone My MySQL"></img>
-                                    <figcaption class="d-sm-inline-block">MySQL</figcaption>
-                                </figure>
-                                <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                    <img src="Image/techno/Java.svg" alt="Icone Java"></img>
-                                    <figcaption class="d-sm-inline-block">Java 8</figcaption>
-                                </figure>
-                                <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                    <img src="Image/techno/springboot.svg" alt="Icone springboot"></img>
-                                    <figcaption class="d-sm-inline-block">spring Boot</figcaption>
-                                </figure>
-                            </div>
+                        <p><strong>Langages :</strong></p>
+                        <!-- FRONT END -->
+                        <div class="container row align-items-end">
+                            <span>Front-end</span>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Html_5.svg" alt="Icone html 5">
+                                <figcaption class="d-sm-inline-block">HTML</figcaption>
+                            </figure>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Css3.svg" alt="Icone CSS 3">
+                                <figcaption class="d-sm-inline-block">CSS</figcaption>
+                            </figure>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Bootstrap.svg" alt="Icone Bootstrap">
+                                <figcaption class="d-sm-inline-block">Bootstrap</figcaption>
+                            </figure>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/JavaScript.svg" alt="Icone JavaScript">
+                                <figcaption class="d-sm-inline-block">Javascript</figcaption>
+                            </figure>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/JQuery.svg" alt="Icone jquery">
+                                <figcaption class="d-sm-inline-block">jQuery</figcaption>
+                            </figure>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Swing.svg" alt="Icone jquery">
+                                <figcaption class="d-sm-inline-block">Swing</figcaption>
+                            </figure>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Ajax.svg" alt="Icone jquery">
+                                <figcaption class="d-sm-inline-block">Ajax</figcaption>
+                            </figure>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Json.svg" alt="Icone jquery">
+                                <figcaption class="d-sm-inline-block">Json</figcaption>
+                            </figure>
+                            <!-- BACK END -->
+                            <span>Back-end</span>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Uml.svg" alt="Icone springboot">
+                                <figcaption class="d-sm-inline-block">UML</figcaption>
+                            </figure>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Java.svg" alt="Icone Java">
+                                <figcaption class="d-sm-inline-block">Java</figcaption>
+                            </figure>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/SpringBoot.svg" alt="Icone springboot">
+                                <figcaption class="d-sm-inline-block">SpringBoot</figcaption>
+                            </figure>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Php.svg" alt="Iocne PHP">
+                                <figcaption class="d-sm-inline-block">PHP</figcaption>
+                            </figure>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/MySQL.svg" alt="Icone My MySQL">
+                                <figcaption class="d-sm-inline-block">MySQL</figcaption>
+                            </figure>
+                        </div>
                         <!-- COLLABORATIF -->
                         <p><strong>Collaboratifs :</strong></p>
                         <!-- VERSIONING -->
-                        <div class="container row">
+                        <div class="container row align-items-end">
                             <span>Versioning</span>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/techno/Git.svg" alt="Icone Git"></img>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/Git.svg" alt="Icone Git">
                                 <figcaption class="d-sm-inline-block">Git</figcaption>
                             </figure>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/techno/GitHub.svg" alt="Icone GitHub"></img>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/GitHub.svg" alt="Icone GitHub">
                                 <figcaption class="d-sm-inline-block">GitHub</figcaption>
                             </figure>
-                        </div>
                         <!-- ENVIRONEMENT -->
-                        <div class="container row">
-                            <span>Environement</span>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/techno/vscode.svg" alt="Icone GitHub"></img>
+                        <span>Environement</span>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/vscode.svg" alt="Icone GitHub">
                                 <figcaption class="d-sm-inline-block">VsCode</figcaption>
                             </figure>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/techno/eclipse.svg" alt="Icone GitHub"></img>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/eclipse.svg" alt="Icone GitHub">
                                 <figcaption class="d-sm-inline-block">Eclipse</figcaption>
                             </figure>
                         </div>
                         <!-- LOGICILES -->
                         <p><strong>Logiciels :</strong></p>
                         <!-- SUITE ADOBE -->
-                        <div class="container row">
+                        <div class="container row align-items-end">
                             <span>Suite Adobe</span>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/logiciel/adobe-xd.svg" alt="Icone Adobe Xd"></img>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/adobe-xd.svg" alt="Icone Adobe Xd">
                                 <figcaption class="d-sm-inline-block">Xd</figcaption>
                             </figure>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/logiciel/adobe-illustrator.svg" alt="Icone Adobe Illustrator"></img>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/adobe-illustrator.svg" alt="Icone Adobe Illustrator">
                                 <figcaption class="d-sm-inline-block">Illustrator</figcaption>
                             </figure>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/logiciel/adobe-photoshop.svg" alt="Icone Adobe Photoshop"></img>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/adobe-photoshop.svg" alt="Icone Adobe Photoshop">
                                 <figcaption class="d-sm-inline-block">Photoshop</figcaption>
                             </figure>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/logiciel/adobe-indesign.svg" alt="Icone Adobe InDesign"></img>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/adobe-indesign.svg" alt="Icone Adobe InDesign">
                                 <figcaption class="d-sm-inline-block">InDesign</figcaption>
                             </figure>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/logiciel/adobe-bridge.svg" alt="Icone Adobe Bridge"></img>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/adobe-bridge.svg" alt="Icone Adobe Bridge">
                                 <figcaption class="d-sm-inline-block">Bridge</figcaption>
                             </figure>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/logiciel/adobe-acrobat.svg" alt="Icone Adobe Acrobat"></img>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/adobe-acrobat.svg" alt="Icone Adobe Acrobat">
                                 <figcaption class="d-sm-inline-block">Acrobat</figcaption>
                             </figure>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/logiciel/figma.svg" alt="Icone figma"></img>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/figma.svg" alt="Icone figma">
                                 <figcaption class="d-sm-inline-block">Figma</figcaption>
                             </figure>
-                        </div>
-                        <!-- SUITE OFFICE -->
-                        <div class="container row">
+                            <!-- SUITE OFFICE -->
                             <span>Suite Office</span>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/logiciel/office-word.svg" alt="Icone figma"></img>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/office-word.svg" alt="Icone figma">
                                 <figcaption class="d-sm-inline-block">Word</figcaption>
                             </figure>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/logiciel/office-excel.svg" alt="Icone figma"></img>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/office-excel.svg" alt="Icone figma">
                                 <figcaption class="d-sm-inline-block">Excel</figcaption>
                             </figure>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/logiciel/office-powerpoint.svg" alt="Icone figma"></img>
-                                <figcaption class="d-sm-inline-block">Power Point</figcaption>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/office-powerpoint.svg" alt="Icone figma">
+                                <figcaption class="d-sm-inline-block">PowerPoint</figcaption>
                             </figure>
-                            <figure class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
-                                <img src="Image/logiciel/office-outlook.svg" alt="Icone figma"></img>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/logiciel/office-outlook.svg" alt="Icone figma">
                                 <figcaption class="d-sm-inline-block">Outlook</figcaption>
                             </figure>
                         </div>
@@ -307,13 +328,13 @@
             </div>
             <!-- ### EXPERIENCE ### -->
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
+                <h2 class="accordion-header sticky-top" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <i class="bi bi-shop"></i> Expériences
                     </button>
                 </h2>
-                <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordion">
                     <div class="accordion-body">
                         <p><strong>Parcour profesionnel :</strong></p>
@@ -377,7 +398,7 @@
             </div>
             <!-- ### LOISIRS ### -->
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFor">
+                <h2 class="accordion-header sticky-top" id="headingFor">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
                         <i class="bi bi-balloon-heart-fill"></i> Loisirs
@@ -389,27 +410,27 @@
                         <div class="container row">
                             <p><strong>Sports et passions : </strong></p>
                             <figure class="col-6 col-sm-4 col-md-3 col-lg-1">
-                                <img src="Image/loisir/loisir_vtt.svg" alt="Icone html 5"></img>
+                                <img src="Image/loisir/loisir_vtt.svg" alt="Icone html 5">
                                 <figcaption class="d-md-inline-block">VTT</figcaption>
                             </figure>
                             <figure class="col-6 col-sm-4 col-md-3 col-lg-1">
-                                <img src="Image/loisir/loisir_cardio.svg" alt="Icone html 5"></img>
+                                <img src="Image/loisir/loisir_cardio.svg" alt="Icone html 5">
                                 <figcaption class="d-md-inline-block">Cardio</figcaption>
                             </figure>
                             <figure class="col-6 col-sm-4 col-md-3 col-lg-1">
-                                <img src="Image/loisir/loisir_multimedia.svg" alt="Icone html 5"></img>
+                                <img src="Image/loisir/loisir_multimedia.svg" alt="Icone html 5">
                                 <figcaption class="d-md-inline-block">Média</figcaption>
                             </figure>
                             <figure class="col-6 col-sm-4 col-md-3 col-lg-1">
-                                <img src="Image/loisir/loisir_dessin.svg" alt="Icone html 5"></img>
+                                <img src="Image/loisir/loisir_dessin.svg" alt="Icone html 5">
                                 <figcaption class="d-md-inline-block">Dessin</figcaption>
                             </figure>
                             <figure class="col-6 col-sm-4 col-md-3 col-lg-1">
-                                <img src="Image/loisir/loisir_manga.svg" alt="Icone html 5"></img>
+                                <img src="Image/loisir/loisir_manga.svg" alt="Icone html 5">
                                 <figcaption class="d-md-inline-block">Manga</figcaption>
                             </figure>
                             <figure class="col-6 col-sm-4 col-md-3 col-lg-1">
-                                <img src="Image/loisir/loisir_japon.svg" alt="Icone html 6"></img>
+                                <img src="Image/loisir/loisir_japon.svg" alt="Icone html 6">
                                 <figcaption class="d-md-inline-block">Japon</figcaption>
                             </figure>
                         </div>
@@ -418,25 +439,24 @@
             </div>
             <!-- ### BOGRAPHIE ### -->
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
+                <h2 class="accordion-header sticky-top" id="headingFive">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         <i class="bi bi-person-lines-fill"></i> Biographie
                     </button>
                 </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                    data-bs-parent="#accordion">
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
                     <div class="accordion-body">
-                        <p><strong>Quoi, Quand, Pourquoi</strong></p>
+                        <p><strong>Le pourquoi du comment !</strong></p>
                         <img src="image/image_bio_sepia.png" alt="">
                         <ul>
-                            <li>Passionné de nouvelle technologie et de graphisme depuis mon adolescence en autodidacte.</li>
-                            <li>Tous a commencé par le petit modem Olitec 56K. Avec cette nouvelle technologie apportant toujours plus d'informations en accés direct chez soi. Celle-ci m'a ouvert un champs des possibles, dans lequel j'ai plongé et découvert un monde d'échange et de connaissances. Le temps passant, naviguant sur la "toile". Passionné par le dessin et le graphisme. Sauvegardant tous un tas d'images manga. pour les redessiner sur logiciels de l'epoque comme Corel Draw.</li>
-                            <li>J'ai réalisé mon 1er site web <i>(2001 sous dreamweaver)</i> lors de ma création d'entreprise. Avec mes connaissances trop basiques en conception web. Manipulant aussi Illustrator, InDesign et Photoshop. Je suis resté sur un logiciel de la suite Adobe qui m'était familière. Mon site est resté sur le modèle d'un site vitrine standard. je me suis rapidement rendu compte que ce logiciel ne m'apporterais pas ce que recherchais.</li>
-                            <li> Utilisant de plus en plus les logiciels graphique. J'ai pris la voie du graphisme print. Pour lier ma passion à un métier pouvant rendre "matériel" mes projets numérique. Je travaille depuis 15 ans en tant que conseillé print et digital. Ce qui me permet de créer et imprimer certain de mes projets.</li>
-                            <li>Le monde évoluant, une technologie ranplacant la précédente. J'ai décidé de me former à la programmation web. Avec une première formation en tant que développeur/intégrateur m'a permis d'acquérir les compétences nécessaire pour développer des sites vitrine et interactif, attrayant. Aujourd'hui Je continue sur une formation de concepteur développeur d'applications, spécialisé en Java. </li>
-                            <li>Ainsi le développement m'apporte satisfaction sur les deux domaines. Aussi bien sur la partie visuelle: front-end, très lié au graphisme et sur la partie back-end: fonctionnel, lié à la conception.</li>
-                            <li>Cherchant chaque jour à améliorer mes connaissances, pour trouver les meilleures solutions afin de créer des sites web attirant performant et agréable d'utilisation.</li>
+                            <li><b>Bonjour ! Êtes-vous perdu ? "non" !</b><br>Si vous êtes arrivé jusqu'ici, c'est qu'il y a quelque chose qui vous à plus ? Alors je tiens à vous remercier de lire ces quelques lignes de présentation.</li>
+                            <li>Étant considérer à peine comme junior dans le domaine. J'ai bien consciense qu'il me reste beaucoup de chemin à parcourir pour apporter une aide efficace. Mais si vous lisez ceci. C'est que vous êtes surement la personne qui m'offrira la chance de lui apporter cette aide.</li>
+                            <li>Les nouvelles technologie et le graphisme dans la peau depuis mon adolescence. Tous a commencé par un petit modem Olitec 56K et sa "douce" musique de connexion </i><audio src="Source/modem.mp3" controls preload="auto" ></audio> <i class="bi bi-emoji-laughing"></i> Cette nouvelle technologie "internet" apportant toujours plus d'informations en accés direct chez soi. Celle-ci m'a ouvert un champs des possibles, dans lequel j'ai plongé et découvert un monde d'échange et de connaissances. Le temps passant, naviguant sur la "toile". Passionné par le dessin et le graphisme. Sauvegardant tous un tas d'images manga. pour les redessiner sur logiciels de l'epoque.</li>
+                            <li>Je me suis mis assez tardivement à la création de page web. J'ai réalisé mon 1er site web <i>(2001 sous dreamweaver)</i> lors de ma création d'entreprise. Plus pour faire de la promotion de ma société plus que du dévelopement. Manipulant aussi Illustrator, InDesign et Photoshop. Je suis resté sur un logiciel de la suite Adobe qui m'était familière. Avec mes connaissances trop basiques en conception web. Mon site est resté sur le modèle d'un site vitrine standard. je me suis rapidement rendu compte que ce logiciel ne m'apporterais pas ce que recherchais.</li>
+                            <li> Utilisant de plus en plus les logiciels graphique. J'ai pris la voie du graphisme print. Pour lier ma passion à un métier pouvant rendre "matériel" mes projets numérique. Je travaille depuis 15 ans en tant que conseillé print et digital. Ce qui m'a permis de créer et d'imprimer certain de mes projets.</li>
+                            <li>Le monde évoluant, une technologie remplacant la précédente. J'ai décidé de me former à la programmation web. Avec une première formation en tant que développeur/intégrateur qui m'a permis d'acquérir les compétences nécessaire pour développer des sites vitrine et interactif, attrayant. Aujourd'hui Je continue sur une formation de concepteur développeur d'applications, spécialisé en Java. </li>
+                            <li>Ainsi le développement web m'apporte satisfaction sur les deux domaines. Aussi bien sur la partie visuelle: front-end, très lié au graphisme et sur la partie back-end: fonctionnel, lié à l'interaction.</li>
                         </ul>
                     </div>
                 </div>
@@ -456,7 +476,7 @@
         </div>
         <!-- ### STRUCTURE ### -->
         <section id="structure">
-            <div >
+            <div>
                 <p><i class="bi bi-diagram-2"></i>Structure :</p>
                 <ul>
                     <li><a href="#headingOne" ><i class="bi bi-journal-bookmark-fill"></i>Réalisations</a></li>

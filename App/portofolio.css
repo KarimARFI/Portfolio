@@ -79,6 +79,13 @@ header{
     color: whitesmoke;
     border-radius: 0 0 5px 5px;
 }
+
+.container .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
 /* titre CDA */
 header div div p{
     text-align: center;
@@ -89,16 +96,17 @@ header div div p{
     border-radius: 5px;
     background-color: rgba(79, 47, 47, 0.7);
 }
+/* ### BOUTON stage ### */
 button[data-bs-toggle="modal"]{
     background-color: rgba(160, 231, 235, 0.8);
     border: 2px solid rgb(85, 127, 130);
     color: rgb(19, 46, 155);
     text-shadow: 1px 2px 1px whitesmoke;
+    font-size: auto;
     font-weight: 600;
-    margin: 0 auto;
-    
+    padding: 0.3rem;
+    width: 100%;
 }
-/* ### stage ### */
 button[data-bs-toggle="modal"]:hover{
     background-color: rgb(75, 231, 239);
     border: 2px solid rgb(71, 101, 176);
@@ -278,12 +286,14 @@ footer section div{
 /* media queries perso pour la gestion du titre CDA et du texte en footer */
 @media (min-width: 341px){
     header div div p{
-        font-size: 2rem;
         padding: unset;
         margin: unset;
         text-align: end;
         background-color: unset;
         text-shadow: 2px 1px black;
+    }
+    button[data-bs-toggle="modal"]{
+        width:fit-content;
     }
     footer #structure{
         display: flex;
@@ -295,15 +305,21 @@ footer section div{
     }
 }
 
+/* media de gestion du bouton de stage */
+@media (min-width: 441px) {
+    /* button[data-bs-toggle="modal"]{
+        width: max-content;
+    } */
+}
+
 /* sm = Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    #stage p{
-        font-size: 1.5rem;
-        display: block;
-    }
     #carousel{
         width: 60%;
         margin: 0 auto 1rem;
+    }
+    header div div p{
+        font-size: larger;
     }
     .accordion li{
         font-size: 1.2rem;
@@ -324,8 +340,8 @@ footer section div{
     header{
         padding: 2vh 5vw;
     }
-    #stage p{
-        font-size: 1rem;
+    header div div p{
+        font-size: x-large;
     }
     .accordion li{
         font-size: 1.3rem;
@@ -336,7 +352,6 @@ footer section div{
         margin: 1rem 2rem;
     }
     audio{
-        /* width: 20%; */
         height: 20px;
         display: inline;
     }
@@ -369,6 +384,7 @@ footer section div{
 
 /* xl = Extra-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
     .accordion-button{
         position: sticky;
     }

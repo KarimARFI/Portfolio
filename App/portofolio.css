@@ -191,7 +191,13 @@ img[src="image/image_bio_sepia.png"]{
 }
 #collapseFive .accordion-body ul li{
     list-style-type:circle;
+    list-style-type:circle;
     margin-bottom: 0.5rem;
+    margin-left: 1rem;;
+}
+audio{
+    width: 30%;
+    display: block;
     margin-left: 1rem;;
 }
 audio{

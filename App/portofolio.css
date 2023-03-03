@@ -127,12 +127,21 @@ main{
 }
 
 /* ### CAROUSEL ### */
+#carousel{
+    height: 20vh;
+}
 .carousel{
     border-radius: 20px;
     border: 2px solid rgba(79, 47, 47, 0.5);
     margin-bottom: 1rem;
     overflow: hidden;
-    /* height: 550px; */
+}
+.carousel-item img{
+    object-fit:cover;
+    object-position: 80% 50%;
+}
+.carousel-indicator .active{
+    color: rgb(255, 172, 17);
 }
 /* ### ACCORDEON variable Bootstrap */
 .accordion{
@@ -320,10 +329,6 @@ footer section div{
 
 /* sm = Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    #carousel{
-        width: 60%;
-        margin: 0 auto 1rem;
-    }
     header div div p{
         font-size: larger;
     }

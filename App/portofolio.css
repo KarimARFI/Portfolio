@@ -1,11 +1,6 @@
 /*####################*/
 /* IMPORT */
 /*####################*/
-/* @font-face {
-    font-family: "Comfortaa";
-    src: url(../Source/Comfortaa-VariableFont_wght.ttf);
-    font-style: normal;
-} */
 @font-face {
     font-family: "Urbanist";
     src: url(../Source/Urbanist-VariableFont_wght.ttf);
@@ -23,19 +18,20 @@
 /*########################################*/
 /* COMMUN */
 /*########################################*/
-/* div{
-    border: 1px solid red;
-    display: inline-block;
-} */
 *, h1, h2, h3, h4, h5, h6, p, ul, .container-fluid, .row{ /* efface aussi celle de BootStrap */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-family: "Comfortaa", sans-serif; */
     font-family: "Urbanist", sans-serif;
     font-weight: normal;
     max-width: unset;
     letter-spacing: 0.5px ;
+}
+h5{
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, whitesmoke, transparent 100%)1;
+
+    padding-bottom: 5px;
 }
 *[id^="collapse"] ul{
     list-style: none;
@@ -61,7 +57,6 @@ a:hover{
 /*########################################*/
 header{
     padding: 20px 2vw;
-    /* min-height: fit-content; */
     background-image: url(../Image/backend.jpg);
     background-color: antiquewhite;
     background-size: cover;
@@ -74,19 +69,23 @@ header{
     /* annulation du bg bootstrap blanc par defaut */
     --bs-accordion-bg: unset
 }
+/* corps de la zone contact */
 #collapse1 .accordion-body{
     background-color: rgba(79, 47, 47, 0.5);
     color: whitesmoke;
     border-radius: 0 0 5px 5px;
 }
-
+#calendar{
+    font-size: 70%;
+    vertical-align: text-top;
+}
+/* titre CDA */
 .container .col{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
 }
-/* titre CDA */
 header div div p{
     text-align: center;
     font-size: auto;
@@ -128,7 +127,7 @@ main{
 
 /* ### CAROUSEL ### */
 #carousel{
-    height: 20vh;
+    height: 30vh;
 }
 .carousel{
     border-radius: 20px;
@@ -136,12 +135,15 @@ main{
     margin-bottom: 1rem;
     overflow: hidden;
 }
-.carousel-item img{
-    object-fit:cover;
-    object-position: 80% 50%;
-}
-.carousel-indicator .active{
-    color: rgb(255, 172, 17);
+.carousel-caption{
+    width: fit-content;
+    bottom: revert;
+    top: 2rem;
+    margin: auto;
+    padding: 0.5rem;
+    background-color: rgba(230, 230, 230, 0.75);
+    border: 2px solid rgb(140, 140, 140);
+    border-radius: 15px;
 }
 /* ### ACCORDEON variable Bootstrap */
 .accordion{
@@ -169,17 +171,23 @@ main{
 }
 .accordion-body p{
     font-size: 1rem;
-    margin: 0.5rem 0;
-    font-weight: 900;
-    border-bottom: 2px solid;
-    border-image: linear-gradient(to right, darkslategray, transparent 100%)1;
+    padding-bottom: 5px;
+    margin: 5px 0;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, whitesmoke, transparent 100%)1;
 }
+/* zone realisation */
+.imgReal{
+    height: 20vh;
+    overflow: hidden;
+}
+
 /* zone connaissance */
 .accordion-body figure{
     text-align: center;
 }
 .accordion-body div span{
-    color: hwb(34 20% 20%);
+    color: rgb(204, 138, 51);
     font-weight: 600;
     padding-bottom: 0.3rem;
 }
@@ -357,8 +365,8 @@ footer{
     .accordion li{
         font-size: 1.3rem;
     }
-    img[src="image/image_bio_sepia.png"]{
-        max-width: 20%;
+    img[src="Image/image_bio_sepia.png"]{
+        max-width: 10%;
         float: left;
         margin: 1rem 2rem;
     }

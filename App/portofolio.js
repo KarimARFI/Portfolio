@@ -1,25 +1,17 @@
-'use strict'; //mode JS plus restrictif au niveau des erreur accepté. Pour appliqué de bonne pratique au développeur
-/* #########################################################"" */
-// let infoCLick = document.getElementById('infoCLick');
-// let info = document.getElementById('info');
-// // 
-// function dropDown(){
-//     if(getComputedStyle(info).display != "none" && getComputedStyle(infoCLick).borderRadius != "2vmin") {
-//         info.style.display = "none";
-//         infoCLick.style.borderRadius = "2vmin";
-//     }
-//     else{
-//         info.style.display = "block";
-//         infoCLick.style.borderRadius = "2vmin 2vmin 0 0";
-//     }
-// }
+'use strict';
+/* ######################################################### */
 
-// infoCLick.addEventListener('click', dropDown);
+/* ### DATE ### */ 
+var dayNames;
+var monthNames;
+// tableaux vides à deux variables.
+dayNames   = new Array('Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam');
+monthNames = new Array('Jan', 'Fév', 'Mars', 'Avr', 'Mai', 'Juill', 'Juin,', 'Août', 'Sep', 'Oct', 'Nov', 'Déc');
+// Création d'une instance de la classe "Date".
+var today;
+today = new Date();
 
-
-//click des accordeon et mise en top 
-let accordionTop = document.getElementsByClassName("accordion-button");
-// console.log(accordionTop);
-accordionTop.forEach(element => {
-    element.window.scrollTo(0,0);
-});
+/* Affichage du contenu d'une partie du tableau directement dans la page HTML.
+La méthode getDay() = renvoi un chiffre pour le jour de la semaine commence par 0 = dimanche.
+La méthode getMonth() renvoi un chiffre pour le nom du mois commence par 0 = janvier. */
+document.getElementById("calendar").innerHTML=' '+dayNames[today.getDay()] +' '+today.getDate()+' '+monthNames[today.getMonth()]+' '+today.getFullYear();

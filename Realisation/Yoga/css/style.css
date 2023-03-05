@@ -1,0 +1,279 @@
+*{
+box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+a[href="#"]{
+	opacity: 35%;
+}
+/*####################  BODY ####################*/
+
+body{
+	margin: 0;
+	/*background-image: url("../maquette/desktop.jpg")*/
+}
+.clear{
+	clear:both;
+}
+.clearafter:after{
+	content:"";
+	display:block;
+	clear:both;
+	margin: 0 auto;
+}
+
+/*#################### HEADER ####################*/
+
+header{
+	background-image: url("../img/fond.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+    padding: 0 0 255px 0;
+    margin-bottom: 2em;
+}
+nav{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 1.5em;
+	color: #fff;
+	padding:1em;
+	text-align: center;
+	background:rgba(255,255,255,0.4);
+}
+nav a{
+	color:#fff;
+	display: inline-block;
+	margin: 0 2em;
+}
+nav a i.fas, nav a i.far{
+	display:block;
+	margin-bottom: 0.2em;
+}
+.offre{
+	text-align: center;
+	color:#fff;
+	background:rgba(255,255,255,0.2);
+	padding: 0.8em;
+	margin: 0;
+}
+h1{
+	padding:100px 0 0px;
+	margin: 0;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 2em;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0.05em 0.05em 0.2em #333;
+}
+
+/*####################  MAIN  ####################*/
+
+main{
+	font-size: 1em;
+	font-family: 'Playfair Display', serif;
+}
+/*####################  SECTION 1  ###############*/
+
+.s1{
+padding: 3em;
+}
+.t1{
+	text-align: center;
+	font-size: 1.5em;
+	margin: 1.5 0 1.5em 0;
+}
+article{
+	color: #3b4753;
+}
+.art1 img{
+	float: left;
+	clear: both;
+	margin: 0 2em 0 0;
+}
+.linebefore:before{
+	content:"";
+	display:block;
+	width:90%;
+	margin: 4em 0 4em 0;
+	height:1px;
+	background:#8d6fd1;
+}
+.t2{
+	text-align: center;
+	font-size: 1.5em;
+	margin: 1.5 0 1.5em 0;
+}
+.art2 img{
+	float: right;
+	clear: both;
+	margin: 0 0 0 2em;
+}
+.p1, .p2{
+	line-height: 1.8em;
+}
+.p2{
+	text-align: right;
+}
+/*####################  SECTION 2  ####################*/
+.s2{
+	background-image: url("../img/background_section.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+.div{
+	display: inline-block;
+	width: calc(100% / 3);
+	text-align: center;
+}
+div img{
+	width: 180px;
+}
+.div{
+	padding: 2em 2em;
+	color: #fff;
+}
+.div p{
+	line-height: 1.8em;
+	margin: 1em;
+}
+iframe{
+	width: 100%;
+}
+/*##########################  CONTACT TABLEAU  #####*/
+.maintableau{
+	width: 90%;
+	margin: 0 auto;
+}
+caption{
+	font-family: 'Playfair Display', serif;
+	font-size: 2em;
+	margin-bottom: 1em;
+	color: #5f576c;
+}
+th{
+	background-color: #c4a9de;
+	border: 1px solid #c4a9de;
+	font-family: 'Kaushan Script', cursive;
+	color: #fff;
+	font-size: 1.6em;
+	text-align: left;
+	font-weight: normal;
+	padding: 0.5em;
+}
+table{
+	border-collapse: collapse;
+	width: 100%;
+	color: #ccc;
+	padding: 1em;
+	margin-bottom: 2em;
+}
+td{
+	border: 1px solid #ccc;
+	color: #5f576c;
+	padding: 1em;
+}
+tr:nth-child(2n){
+	background-color: #f2f2f2;
+}
+tr td:nth-child(2),tr td:nth-child(3){
+	text-align: center;
+}
+tr td:nth-child(3){
+	color: #a15cb9;
+}
+/*#################### FORMULAIRE ####################*/
+.valider{
+	color: #5f576c;
+	text-align: center;
+	font-weight: normal;
+}
+form{
+	text-align: center;
+}
+label{
+	padding: 0 2em 0 0;
+}
+legend{
+	text-align: center;
+}
+fieldset{
+	color: #5f576c;
+}
+legend{
+	padding: 2em 0.5em 2em 0.5em;
+}
+/*#################### FOOTER ####################*/
+footer{
+	background-color: #8d6fd1;
+	border-top: 8px solid #fff;
+}
+#licence{
+    display: block;
+    text-align: center;
+    padding: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+#licence img{
+    width: 50px;
+}
+
+/*==========     ARTICLE LISTE     ==========*/
+
+.container{
+	max-width: 1500px;
+	margin: 0 auto;
+}
+.section{
+	/*border: 1px solid red;*/
+	width: 69%;
+	display: flex;
+	flex-direction: column;
+}
+h2{
+	font-family: 'Playfair Display', serif;
+}
+.img_left{
+	float: left;
+	width: 250px;
+	margin-right: 2em;
+}
+.article{
+	/*border: 1px solid #000000;*/
+	display: inline-block;
+	padding: 1em;
+}
+aside{
+	width: 30%;
+	border-left: 2px solid #8c6fd1;
+	vertical-align: top;
+	padding: 1em;
+}
+.align_right{
+	text-align: right;
+	display: block;
+}
+.pre_sui{
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+}
+
+/*==========     ARTICLE LISTE     ==========*/
+
+ .container-flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	align-items: stretch;
+}
+.container-flex aside{
+	align-self: stretch;
+}
+.img_right{
+	float: right;
+	width: 250px;
+	margin-right: 2em;
+}

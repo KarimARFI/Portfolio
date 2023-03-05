@@ -1,0 +1,223 @@
+*{
+box-sizing: border-box
+}
+/*####################  BODY ####################*/
+body{
+	background-image: url(../img/bg_body.svg);
+	background-color: #444;
+	font-size: 1rem;
+	font-family: Arial, sans-serif;
+	padding:1rem;
+	line-height: 1.5rem;
+}
+@font-face{
+	font-family: "BodegaSans";
+	src: url(../fonts/BodegaSans_Black.ttf);
+}
+/*#################### HEADER ####################*/
+header{
+	background: linear-gradient(120deg, #fff 50%, #333 50%);
+}
+img{
+	width: auto;
+	vertical-align: middle;
+}
+header div{
+	width: 50%;
+	vertical-align: top;
+	display: inline-block;
+	padding-left: 3rem;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 3rem;
+}
+.navmenu{
+	width: 50%;
+	display: inline-block;
+	text-align: right;
+	padding-right: 3rem;
+}
+header nav ul li a{
+	width: 50%;
+	vertical-align: center;
+	font-family: "BodegaSans";
+	font-size: 1.5rem;
+	text-decoration: none;
+	text-align: right;
+	color: white;
+}
+header nav ul li a:hover{
+	color: #ff9d00;
+}
+/*####################  MAIN  ####################*/
+/*.container{
+	max-width: 1500px;
+}*/
+main{
+	padding: 0 15px;
+}
+#explication{
+	color: white;
+	text-align: center;
+	font-size: larger;
+}
+h1{
+	font-weight: normal;
+	font-family: "BodegaSans";
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2.2rem;
+	color: #fff;
+	line-height: 4rem;
+}
+.flexslider{
+	width: 100%;
+	border: 10px solid #fff;
+	border-radius: 0;
+}
+h2{
+	border-top: 2mm ridge rgb(68, 68, 68, .1);
+	border-left: 2mm ridge rgb(68, 68, 68, .1);
+	font-weight: normal;
+	font-size: 2.5rem;
+	font-family: "BodegaSans";
+	text-transform: uppercase;
+	color: #fff;
+	padding: 2rem 3rem;
+	line-height: 3rem;
+}
+span{
+	color: #ff9d00;
+}
+.motoN article{
+	background-color: #fff;
+	text-align: center;
+	padding: 0 15px 40px 15px;
+	margin-bottom: 30px;
+}
+.motoN article img{
+	width: 100%;
+	margin:0 auto;
+}
+article a{
+	display: block;
+	width: 100%;
+}
+h3{
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: "BodegaSans";
+	color: #ff9d00;
+	font-size: 1.6rem;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	border-bottom: 2px solid #ff9d00;
+}
+.motoN article>p{
+	color: #9499a8;
+	margin: 2rem 0;
+}
+.bg{
+	background-color: #ff9d00;
+	padding: 1rem 4rem;
+	color: #fff;
+	text-decoration: none;
+}
+.social article p{
+	color: #b7b7b7;
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+.fab{
+	text-decoration: none;
+	text-align: center;
+	color: #b7b7b7;
+	display: block;
+	margin: 3rem;
+	font-size: 3rem;
+}
+video{
+	width: 100%;
+}
+footer{
+	box-shadow: 0 0 8px 8px rgba(0,0,0,0.2);
+}
+
+/*#################### FOOTER ####################*/
+h4{
+	padding-top: 5rem;
+	text-align: center;
+	color: #b7b7b7;
+	font-family: "BodegaSans";
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.navfoot{
+	text-align: center;
+	color: #b7b7b7;
+	font-size: 1rem;
+	margin: 3rem 2rem ;
+}
+footer .navfoot a{
+	text-align: center;
+	margin: 1rem 1rem;
+	color: #b7b7b7;
+	text-decoration: none;
+}
+#licence img{
+    width: 50px;
+}
+footer #licence{
+    display: block;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    color: #b7b7b7;
+}
+/*#################### MEDIA ####################*/
+
+/*### TABLETTE ###*/
+@media screen and (min-width:450px){
+	.fab{
+		display: inline-block;
+		width: calc(100%/3);
+		margin: 1rem 0 2rem 0;
+	}
+	header {
+		background: linear-gradient(150deg, #fff 50%, #333 50%);
+	}
+}
+/*### DESK ###*/
+@media screen and (min-width:1025px){
+	main{
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+	.motoN article{
+		display: inline-block;
+		width: calc(25% - 1em);
+		margin: 0 0.5em;
+	}
+	.social article{
+		display: inline-block;
+		width: 50%;
+		vertical-align: top;
+		}
+	.social article p{
+		text-align: left;
+		font-size: 1rem;
+	}
+	.social div{
+		display: inline-block;
+		width: 50%;
+	}
+	footer{
+	box-shadow: 2 0 8px 8px rgba(0,0,0,0.2);
+	}
+	
+
+}

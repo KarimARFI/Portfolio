@@ -1,0 +1,64 @@
+.container{
+	max-width: 750px;
+	margin:0 auto;
+}
+header{
+	background-color: #b8cb21;
+	padding: 0 25px 0 25px;
+}
+nav a{
+	color: #2a4728;
+	font-family: "Oswald", sans-serif;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	padding: 65px 25px 0 25px;
+	float: right;
+}
+.clear{
+	clear: left;
+}
+body{
+	background-image: url("../img/fond.png");
+	font-family: Arial, sans-serif;
+	font-size:16px;
+}
+main{
+	background-color: #ffffff;
+	padding: 30px 25px 50px 25px;
+}
+h1{
+	float: left;
+	margin: 0;
+}
+h2{
+	color: #b8cb21;
+	font-family: "Oswald", sans-serif;
+	font-size: 1.3em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.floatleft{
+	width: 300px;
+	margin: 0 15px 15px 0;
+	float: left;
+}
+p, ul{
+	color: #6b6162;
+}
+.readmore{
+	background-color: #b8cb21;
+	color:#fff;
+	text-decoration:none;
+	padding:.5em 1em;
+	float:right;
+}
+
+
+
+
+
+
+
+
+
+

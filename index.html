@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -16,8 +16,9 @@
     <!-- CCS PERSO -->
     <link rel="stylesheet" href="App/portofolio.css">
     <!-- JAVASCRIPT PERSO -->
-    <!-- defer : chargement du JS en fin de DOM. pour lecture de tous les ID du HTML. -->
-    <!-- <script src="App/portofolio.js" defer></script> -->
+    <script src="App/portofolio.js" defer></script>
+    <!-- pré-réglage de la boucle du carousel -->
+    <!-- <script src="App/realisation.js" async></script> -->
 </head>
 <body>
     <!-- ############################## -->
@@ -42,6 +43,7 @@
                                     <li><a href=""><i class="bi bi-envelope-at-fill"></i> Mail</a></li>
                                     <li><a href="https://github.com/KarimARFI" target="_blank" rel="noopener noreferrer nofollow"><i class="bi bi-github"></i> Git Hub</a></li>
                                     <li><a href="https://www.linkedin.com/in/karim-arfi/"  target="_blank" rel="norefer noopener nofollow"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                                    <li><i class="bi bi-calendar3"><i id="calendar"></i></i></li>
                                 </ul>
                             </div>
                         </div>
@@ -58,7 +60,9 @@
             </div>
         </div>
     </header>
+    <!-- ##############################  -->
     <!-- ### MODAL ### -->
+    <!-- ##############################  -->
     <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -72,10 +76,11 @@
                     <li><i class="bi bi-calendar-month"> </i>En appoint durant les congés</li>
                     <li><i class="bi bi-file-earmark-text"> </i>Convention de stage de 3 mois. <i>(centre AFPA Paris 12)</i>.</li>
                     <li><i class="bi bi-currency-euro"> </i>Non rémunéré !</li>
+                    <li><i class="bi bi-speedometer"> </i>Plus vous valider tôt. Plus je pourrais me prpéparer au techno que vous utilisez !</li>
                 </ul>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-success">Me contacter</button>
+                <button type="button" class="btn btn-success"><a href="https://www.linkedin.com/in/karim-arfi/" target="blank" rel="nofollow noopener noreferrer">Me contacter</a></button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
             </div>
         </div>
@@ -87,39 +92,64 @@
     <main>
         <!-- ### CARROUSSEL ### -->
         <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <!-- Mettre en place une boucle JS ou jQuery avec element HTML -->
+            <!-- corps du carousel -->
             <div class="carousel-inner">
-                <!-- Mettre en place une boucle + Json -->
-                <div class="carousel-item active " data-bs-interval="8000">
-                    <!-- caption -->
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                <!-- element du carousel -->
+                <div class="carousel-item active" data-bs-interval="8000">
+                    <img src="Realisation/WolfGang/wolfgang1.png" class="d-block w-100" alt="Slide_1_carousel">
+                    <div class="carousel-caption">
+                        <a href="Realisation/WolfGang/index.html" target="_blank">
+                            <h5>Wolf Gang</h5>
+                        </a>
+                        <p>Exercice carousel jQuery, media YouTube, en responsive flex.</p>
                     </div>
-                    <img src="Image/backend.jpg" class="d-block w-100" alt="Slide_1_carousel">
                 </div>
                 <div class="carousel-item" data-bs-interval="8000">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                    <img src="Realisation/Yoga/yoga1.png" class="d-block w-100" alt="Slide_2_carousel">
+                    <div class="carousel-caption">
+                        <a href="Realisation/Yoga/index.html" target="_blank">
+                            <h5>Yoga</h5>
+                        </a>
+                        <p>Exercice responsive en flex, formulaire de contact.</p>
                     </div>
-                    <img src="Image/ok.jpg" class="d-block w-100" alt="Slide_2_carousel">
                 </div>
                 <div class="carousel-item" data-bs-interval="8000">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                    <img src="Realisation/CupTea/cupoftea2.png" class="d-block w-100" alt="Slide_3_carousel">
+                    <div class="carousel-caption">
+                        <a href="Realisation/CupTea/index.html" target="_blank">
+                            <h5>Cup of Tea</h5>
+                        </a>
+                        <p>Exercice en html, css, responsive.</p>
                     </div>
-                    <img src="Image/image_defaut.png" class="d-block w-100" alt="Slide_3_carousel">
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                    <img src="Realisation/Creasoul/creasoul.png" class="d-block w-100" alt="Slide_4_carousel">
+                    <div class="carousel-caption">
+                        <a href="Realisation/Creasoul/index.html" target="_blank">
+                            <h5>CreaSoul</h5>
+                        </a>
+                        <p>Exercice en html, css, responsive.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                    <img src="Realisation/RealtyGroup/realty.png" class="d-block w-100" alt="Slide_5_carousel">
+                    <div class="carousel-caption">
+                        <a href="Realisation/RealtyGroup/index.html" target="_blank">
+                            <h5>Realty RealtyGroup</h5>
+                        </a>
+                        <p>Exercice avec sous-menu en hover.</p>
+                    </div>
                 </div>
             </div>
-            <!-- puce du carrousselle pour sauter sur une slide direct -->
+            <!-- puce du carrousselle pour passer sur une slide direct -->
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
-            <!-- FIN DE BOUCLE -->
+            <!-- fleche du carousel -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <!-- <span class="visually-hidden">Previous</span> -->
@@ -132,7 +162,7 @@
         <!-- ### ACCORDEON ### -->
         <div class="accordion" id="accordion">
             <!-- ### REALISATION ### -->
-            <div class="accordion-item ">
+            <div class="accordion-item">
                 <h2 class="accordion-header sticky-top" id="headingOne">
                     <!-- collapsed à la class pour faire pivoter la fleche de direction, aria-expanded="true" pour gérer la bonne ouverture -->
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -141,34 +171,86 @@
                     </button>
                 </h2>
                 <!-- ajouter show dans la class apres collapse pour etre ouvert par defaut -->
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                    data-bs-parent="#accordion">
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
                     <!-- Class gérant l'espace de vie du body -->
                     <div class="accordion-body">
-                        <p><strong>Classé</strong> par ordre chronologique du plus récent.</p>
-                        <!-- Cards des réalisations -->
+                        <p>Classé par ordre chronologique du plus récent.</p>
+                        <!-- 1er cards -->
                         <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
-                            <div class="col-md-6 mb-md-0 p-md-4">
-                                <img src="../../00_FeuilleParDefaut/image-defaut/image_defaut.png"
-                                class="w-100 mt-3" alt="...">
+                            <div class="col-md-6 mb-md-0 p-md-4 imgReal">
+                                <img src="Realisation/WolfGang/wolfgang2.png" class="w-100 mt-3" alt="...">
                             </div>
                             <div class="col-md-6 p-4 ps-md-0 text-light">
-                                <h5 class="mt-0">Columns with stretched link</h5>
-                                <p>Another instance here</p>
+                                <h5 class="mt-0">Wolf Gang</h5>
+                                <p>Exercice avec carousel en jQuery, responsive, avec media YouTube. </p>
                                 <!-- Streched Link étire le lien pour qu'il soit actif sur tout le bloc parent en position relative-->
-                                <a href="#" class="stretched-link">Go somewhere</a>
+                                <a href="Realisation/WolfGang/index.html" class="stretched-link">Voir l'exercice</a>
                             </div>
                         </div>
                         <!-- 2nd cards -->
                         <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
-                            <div class="col-md-6 mb-md-0 p-md-4">
-                                <img src="../../00_FeuilleParDefaut/image-defaut/image_defaut.png"
-                                    class="w-100 mt-3" alt="...">
+                            <div class="col-md-6 mb-md-0 p-md-4 imgReal">
+                                <img src="Realisation/Creasoul/creasoul.png" class=" w-100 mt-3" alt="...">
                             </div>
                             <div class="col-md-6 p-4 ps-md-0 text-light">
-                                <h5 class="mt-0">Columns with stretched link</h5>
-                                <p>Another instance here</p>
-                                <a href="#" class="stretched-link">Go somewhere</a>
+                                <h5 class="mt-0">CreaSoul</h5>
+                                <p>Exercice en flex responsive : mobile, tablette et desktop. </p>
+                                <a href="Realisation/Creasoul/index.html" class="stretched-link">Voir l'exercice.</a>
+                            </div>
+                        </div>
+                        <!-- 3eme cards -->
+                        <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
+                            <div class="col-md-6 mb-md-0 p-md-4 imgReal">
+                                <img src="Realisation/RealtyGroup/realty.png" class=" w-100 mt-3" alt="...">
+                            </div>
+                            <div class="col-md-6 p-4 ps-md-0 text-light">
+                                <h5 class="mt-0">Realty RealtyGroup</h5>
+                                <p>Exercice avec gestion de sous menu.</p>
+                                <a href="Realisation/RealtyGroup/index.html" class="stretched-link">Voir l'exercice.</a>
+                            </div>
+                        </div>
+                        <!-- 4eme cards -->
+                        <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
+                            <div class="col-md-6 mb-md-0 p-md-4 imgReal">
+                                <img src="Realisation/CupTea/cupoftea2.png" class=" w-100 mt-3" alt="...">
+                            </div>
+                            <div class="col-md-6 p-4 ps-md-0 text-light">
+                                <h5 class="mt-0">Cup of Tea</h5>
+                                <p>Exercice en media queries : mobile, desktop. </p>
+                                <a href="Realisation/CupTea/index.html" class="stretched-link">Voir l'exercice.</a>
+                            </div>
+                        </div>
+                        <!-- 5eme cards -->
+                        <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
+                            <div class="col-md-6 mb-md-0 p-md-4 imgReal">
+                                <img src="Realisation/Yoga/yoga2.png" class=" w-100 mt-3" alt="...">
+                            </div>
+                            <div class="col-md-6 p-4 ps-md-0 text-light">
+                                <h5 class="mt-0">Yoga</h5>
+                                <p>Exercice en flex responsive, avec formulaire de contact HTML. </p>
+                                <a href="Realisation/Yoga/index.html" class="stretched-link">Voir l'exercice.</a>
+                            </div>
+                        </div>
+                        <!-- 6eme cards -->
+                        <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
+                            <div class="col-md-6 mb-md-0 p-md-4 imgReal">
+                                <img src="Realisation/FishChips/fishChips.png" class=" w-100 mt-3" alt="...">
+                            </div>
+                            <div class="col-md-6 p-4 ps-md-0 text-light">
+                                <h5 class="mt-0">Fish and Chips</h5>
+                                <p>Exercice simple de design HTML CSS. </p>
+                                <a href="Realisation/FishChips/index.html" class="stretched-link">Voir l'exercice.</a>
+                            </div>
+                        </div>
+                        <!-- 7eme cards -->
+                        <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
+                            <div class="col-md-6 mb-md-0 p-md-4 imgReal">
+                                <img src="Realisation/GreenOffice/greenOffice.png" class=" w-100 mt-3" alt="...">
+                            </div>
+                            <div class="col-md-6 p-4 ps-md-0 text-light">
+                                <h5 class="mt-0">Green Office</h5>
+                                <p>Exercice simple de design HTML CSS. </p>
+                                <a href="Realisation/Yoga/index.html" class="stretched-link">Voir l'exercice.</a>
                             </div>
                         </div>
                         <!-- Fin des cards -->

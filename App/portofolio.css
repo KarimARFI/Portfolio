@@ -97,19 +97,49 @@ header div div p{
 }
 /* ### BOUTON stage ### */
 button[data-bs-toggle="modal"]{
-    background-color: rgba(160, 231, 235, 0.8);
     border: 2px solid rgb(85, 127, 130);
+    background-color: rgba(174, 246, 237, 0.8);
     color: rgb(19, 46, 155);
-    text-shadow: 1px 2px 1px whitesmoke;
+    /* text-shadow: 1px 2px 1px whitesmoke; */
     font-size: auto;
     font-weight: 600;
     padding: 0.3rem;
     width: 100%;
+    animation-name: stage;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite
 }
+/* @keyframes stage{
+    0%{ background-color: (rgba(174, 246, 237, 0.8)); }
+    25%{ background-color: (red); }
+    50%{ background-color: (rgba(48, 246, 223, 0.8)); }
+    75%{ background-color: (rgba(121, 247, 232, 0.8)); }
+    100%{ background-color: (rgba(174, 246, 237, 0.8)); }
+} */
+@keyframes stage{
+    0%{
+        transform: scale(100%);
+    }
+    25%{
+        transform: scale(105%);
+    }
+    50%{
+        transform: scale(108%);
+    }
+    75%{
+        transform: scale(105%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+
 button[data-bs-toggle="modal"]:hover{
-    background-color: rgb(75, 231, 239);
-    border: 2px solid rgb(71, 101, 176);
-    color: rgb(52, 76, 171);
+    border: 2px solid rgb(150, 166, 206);
+    color: white;
+    background-color: rgb(52, 76, 171);
+    text-shadow: unset;
 }
 .modal-header{
     background-color: rgba(160, 231, 235, 0.8);
@@ -388,7 +418,7 @@ footer{
 /* lg = Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .accordion li{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     #top{
         width: 3rem;

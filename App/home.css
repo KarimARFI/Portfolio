@@ -10,32 +10,30 @@ body:before{
     border-radius: 25px;
     text-align: center;
     font-weight: 700;
-    color: whitesmoke;
     position: absolute;
     top: 25px;
     left: 25px;
-    animation-name: scintille;
+    line-height: 1rem;
+    animation-name: scale;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    vertical-align: auto ;
-    line-height: 1rem;
 }
 
-@keyframes scintille{
+@keyframes scale{
     0%{
-        scale: 100%;
+        transform: scale(100%);
     }
     25%{
-        scale: 110%;
+        transform: scale(110%);
     }
     50%{
-        scale: 120%;
+        transform: scale(120%);
     }
     75%{
-        scale: 110%;
+        transform: scale(110%);
     }
     100%{
-        scale: 100%;
+        transform: scale(100%);
     }
 }

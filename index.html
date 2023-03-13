@@ -40,7 +40,7 @@
                             <div class="container row">
                                 <!-- liste Contact -->
                                 <ul>
-                                    <li><a href=""><i class="bi bi-envelope-at-fill"></i> Mail</a></li>
+                                    <li><a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i class="bi bi-envelope-at-fill"></i> Mail</a></li>
                                     <li><a href="https://github.com/KarimARFI" target="_blank" rel="noopener noreferrer nofollow"><i class="bi bi-github"></i> Git Hub</a></li>
                                     <li><a href="https://www.linkedin.com/in/karim-arfi/"  target="_blank" rel="norefer noopener nofollow"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
                                     <li><i class="bi bi-calendar3"><i id="calendar"></i></i></li>
@@ -70,22 +70,112 @@
                     <h1 class="modal-title fs-5" id="ModalLabel">Les avantages de mon stage :</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            <div class="modal-body">
-                <ul>
-                    <li><i class="bi bi-calendar3"> </i>Période du 3 juillet au 22 septembre 2023.</li>
-                    <li><i class="bi bi-file-earmark-text"> </i>Convention de stage de 3 mois. <i>(centre AFPA Paris 12).</i></li>
-                    <li class="text-success fw-bold"><i class="bi bi-currency-euro"> </i>Non rémunéré et aucun frais !</li>
-                    <li><i class="bi bi-calendar-month"> </i>Un appoint durant les congés.</li>
-                    <li><i class="bi bi-speedometer"> </i>Plus vous valider tôt. Plus je pourrais me préparer à vos besoins et techno que vous utilisez !</li>
-                </ul>
+                <div class="modal-body">
+                    <ul>
+                        <li><i class="bi bi-calendar3"> </i>Période du 3 juillet au 22 septembre 2023.</li>
+                        <li><i class="bi bi-file-earmark-text"> </i>Convention de stage de 3 mois. <i>(centre AFPA Paris 12).</i></li>
+                        <li class="text-success fw-bold"><i class="bi bi-currency-euro"> </i>Non rémunéré et aucun frais !</li>
+                        <li><i class="bi bi-calendar-month"> </i>Un appoint durant les congés.</li>
+                        <li><i class="bi bi-speedometer"> </i>Plus vous valider tôt. Plus je pourrais me préparer à vos besoins et techno que vous utilisez !</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success"><a href="Source/Karim_ARFI_CV_concepteur_developpeur.pdf" download="Karim_ARFI_CV_concepteur_developpeur">Télécharger mon C.V</a></button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-success"><a href="Source/Karim_ARFI_CV_concepteur_developpeur.pdf" download="Karim_ARFI_CV_concepteur_developpeur">Télécharger mon C.V</a></button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-            </div>
-        </div>
         </div>
     </div>
+    <!-- ##############################  -->
+    <!-- ### OFFCANVAS ### -->
+    <!-- ##############################  -->
+    <div class="offcanvas offcanvas-bottom show" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Me contacter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <!-- ### formulire ### -->
+            <form class="row g-2 needs-validatation was-validated" novalidate>
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <label for="validationCustom01" class="form-label">Société :</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="3 caractères minimum" min="3" max="20" required>
+                    <div class="valid-feedback">
+                        Champs validé.
+                    </div>
+                    <div class="invalid-feedback">
+                        Champs incorrect. Veuillez vérifier.
+                    </div>
+                </div>
+                <!-- Téléphone -->
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <label for="validationCustom02" class="form-label">Téléphone :</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="10 chiffres" min="10" max="10" required>
+                    <div class="valid-feedback">
+                        Champs validé.
+                    </div>
+                    <div class="invalid-feedback">
+                        Champs incorrect. Veuillez vérifier.
+                    </div>
+                </div>
+                <!-- Nom -->
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <label for="validationCustom03" class="form-label">Nom :</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="3 caractères minimum" min="3" max="20"required>
+                    <div class="valid-feedback">
+                        Champs validé.
+                    </div>
+                    <div class="invalid-feedback">
+                        Champs incorrect. Veuillez vérifier.
+                    </div>
+                </div>
+                <!-- Mail -->
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <label for="validationCustomUsername" class="form-label">E-mail:</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="10 caractères minimum" min="10" max="50"required>
+                        <div class="valid-feedback">
+                            Champs validé.
+                        </div>
+                        <div class="invalid-feedback">
+                            Champs incorrect. Veuillez vérifier.
+                        </div>
+                    </div>
+                </div>
+                <!-- Message -->
+                <div class="col-12">
+                    <label for="validationCustom03" class="form-label">Message :</label>
+                    <textarea class="form-control" placeholder="Comment m'avez-vous connu ?" id="floatingTextarea" id="validationCustom03" style="height: 100px" required></textarea>
+                    <div class="valid-feedback">
+                        Champs validé.
+                    </div>
+                    <div class="invalid-feedback">
+                        Champs incorrect. Veuillez vérifier.
+                    </div>
+                </div>
+                <!-- CheckBox -->
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Je valide les conditions.
+                        </label>
+                        <div class="valid-feedback">
+                            Champs validé.
+                        </div>
+                        <div class="invalid-feedback">
+                            Lire et accepter les conditions avant validation.
+                        </div>
+                    </div>
+                </div>
+                <!-- Bouton -->
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div> <!-- fin du offcnvas body -->
+    </div> <!-- fin du OffCanvas -->
     <!-- ##############################  -->
     <!-- MAIN  -->
     <!-- ##############################  -->

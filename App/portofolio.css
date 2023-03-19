@@ -79,6 +79,17 @@ header{
     font-size: 70%;
     vertical-align: text-top;
 }
+.offcanvas{
+    --bs-offcanvas-height: 90vh;
+}
+.custom-popover {
+    --bs-popover-max-width: 50vw;
+    --bs-popover-border-color: var(--bs-success);
+    --bs-popover-header-bg: var(--bs-success);
+    --bs-popover-header-color: var(--bs-white);
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+  }
 /* titre CDA */
 .container .col{
     display: flex;
@@ -97,49 +108,39 @@ header div div p{
 }
 /* ### BOUTON stage ### */
 button[data-bs-toggle="modal"]{
-    border: 2px solid rgb(85, 127, 130);
-    background-color: rgba(174, 246, 237, 0.8);
-    color: rgb(19, 46, 155);
-    /* text-shadow: 1px 2px 1px whitesmoke; */
+    border: 2px solid rgb(255,102,0);
+    color: black;
     font-size: auto;
     font-weight: 600;
     padding: 0.3rem;
     width: 100%;
+    transition: 0.5s ease-in-out;
     animation-name: stage;
-    animation-duration: 3s;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite
+    animation-iteration-count:  infinite;
+    animation-direction: alternate;
 }
-/* @keyframes stage{
-    0%{ background-color: (rgba(174, 246, 237, 0.8)); }
-    25%{ background-color: (red); }
-    50%{ background-color: (rgba(48, 246, 223, 0.8)); }
-    75%{ background-color: (rgba(121, 247, 232, 0.8)); }
-    100%{ background-color: (rgba(174, 246, 237, 0.8)); }
-} */
 @keyframes stage{
     0%{
-        transform: scale(100%);
+        background-color: rgb(255,204,102);
     }
     25%{
-        transform: scale(105%);
+        background-color: rgb(255,179,77);
     }
     50%{
-        transform: scale(108%);
+        background-color: rgb(255,153,51);
     }
     75%{
-        transform: scale(105%);
+        background-color: rgb(255,128,26);
     }
     100%{
-        transform: scale(100%);
+        background-color: rgb(255,102,0);
     }
 }
 
 button[data-bs-toggle="modal"]:hover{
-    border: 2px solid rgb(150, 166, 206);
-    color: white;
-    background-color: rgb(52, 76, 171);
-    text-shadow: unset;
+   transform: scale(110%);
 }
 .modal-header{
     background-color: rgba(160, 231, 235, 0.8);
@@ -306,7 +307,9 @@ footer{
 #structure div ul li i{
     margin-right: 0.5rem;
 }
-
+#structure div:nth-child(3), #structure div:nth-child(4){
+    visibility: hidden;
+}
 /* ### BOUTON TOP ### */
 #top{
     color: darkslategray;
@@ -370,6 +373,9 @@ footer{
     header div div p{
         font-size: larger;
     }
+    .offcanvas{
+        --bs-offcanvas-height: fit-content;
+    }
     .accordion li{
         font-size: 1.2rem;
     }
@@ -391,6 +397,9 @@ footer{
     }
     header div div p{
         font-size: x-large;
+    }
+    .custom-popover {
+        --bs-popover-max-width: 20vw;
     }
     .accordion li{
         font-size: 1.3rem;
@@ -433,7 +442,9 @@ footer{
 
 /* xl = Extra-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+    /* .offcanvas{
+        --bs-offcanvas-height: 65vh;
+    } */
     .accordion-button{
         position: sticky;
     }

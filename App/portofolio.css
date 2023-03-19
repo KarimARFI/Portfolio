@@ -82,6 +82,14 @@ header{
 .offcanvas{
     --bs-offcanvas-height: 90vh;
 }
+.custom-popover {
+    --bs-popover-max-width: 50vw;
+    --bs-popover-border-color: var(--bs-success);
+    --bs-popover-header-bg: var(--bs-success);
+    --bs-popover-header-color: var(--bs-white);
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+  }
 /* titre CDA */
 .container .col{
     display: flex;
@@ -108,7 +116,7 @@ button[data-bs-toggle="modal"]{
     width: 100%;
     transition: 0.5s ease-in-out;
     animation-name: stage;
-    animation-duration: 5s;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count:  infinite;
     animation-direction: alternate;
@@ -299,7 +307,9 @@ footer{
 #structure div ul li i{
     margin-right: 0.5rem;
 }
-
+#structure div:nth-child(3), #structure div:nth-child(4){
+    visibility: hidden;
+}
 /* ### BOUTON TOP ### */
 #top{
     color: darkslategray;
@@ -387,6 +397,9 @@ footer{
     }
     header div div p{
         font-size: x-large;
+    }
+    .custom-popover {
+        --bs-popover-max-width: 20vw;
     }
     .accordion li{
         font-size: 1.3rem;

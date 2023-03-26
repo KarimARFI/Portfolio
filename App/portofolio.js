@@ -1,7 +1,7 @@
 'use strict';
 
 /* ######################################################### */
-/* ### DATE ### */ 
+/* DATE */ 
 /* ######################################################### */
 // création des tableaux.
 let jour   = new Array('Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam');
@@ -16,31 +16,45 @@ Selon les besoins on appel un des tableau avec la fonction native renvoyant un n
 document.getElementById("calendar").innerHTML=' '+jour[today.getDay()] +' '+today.getDate()+' '+mois[today.getMonth()]+' '+today.getFullYear();
 
 /* ######################################################### */
-/* CONTROL DU FORMULAIRE DE CONTACT BOOTSTRAP uniquement */
-/* ######################################################### */
-(function() {
-    /** Ecoute au chargement de la page*/
-    window.addEventListener('load', function() {
-        /** capture de toutes les classes des éléments dans le formulaire "needs-validation" */
-        var forms = document.getElementsByClassName('needs-validation');
-        /** création d'un tableau des classes capturé précédement avec filtre */
-        var validation = Array.prototype.filter.call(forms, function(form){
-            console.log(forms);
-            console.log(form);
-            form.addEventListener('submit', function(event){
-                console.log(form);
-                if (form.checkValidity() === false){
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    }, false);
-})();
-
-/* ######################################################### */
 /* POPOVER BOOSTRAP*/
 /* ######################################################### */
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+/* ######################################################### */
+/* TOAST BOOSTRAP*/
+/* ######################################################### */
+const toastTrigger = document.getElementById('ToastBtn')
+const ToastDiv = document.getElementById('ToastDiv')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(ToastDiv)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
+
+/* ######################################################### */
+/* CONTROL DU FORMULAIRE DE CONTACT */
+/* ######################################################### */
+/* regex des texte caractére alphanumérique, minus, maj, accent (fr, es, pt), espace de 3 à 20 caractères */
+/*Si accent uniquement français : À-ÖØ-öø-ÿ */
+let regexText = /^[\wÀ-ÿ\s]{3,20}$/;
+/* telephone commence par 0 suivi d'un chiffre de 1 jusqu'a 7 sans 8 ni 9 suivi de groupe de 2 chiffres 4 fois*/
+let regexTel = /^0[1234567](?:\d{2}){4}$/;
+/* regex mail */ 
+let regexMail = /^[\w_.-]+@[\w.-]+\.[a-z]{2,}$/i;
+
+
+/* regex message */
+let regexMess = /^[.\s]{30,200}$/;
+
+// const formValue = document.forms[0];
+// for (let i = 0; i < formValue.length; i++) {
+//   console.log( formValue.elements[i].name + "<br>");
+//   if (condition) {
+    
+//   } else {
+    
+//   }
+// }

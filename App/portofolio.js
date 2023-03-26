@@ -44,17 +44,5 @@ let regexText = /^[\wÀ-ÿ\s]{3,20}$/;
 let regexTel = /^0[1234567](?:\d{2}){4}$/;
 /* regex mail */ 
 let regexMail = /^[\w_.-]+@[\w.-]+\.[a-z]{2,}$/i;
-
-
 /* regex message */
 let regexMess = /^[.\s]{30,200}$/;
-
-// const formValue = document.forms[0];
-// for (let i = 0; i < formValue.length; i++) {
-//   console.log( formValue.elements[i].name + "<br>");
-//   if (condition) {
-    
-//   } else {
-    
-//   }
-// }

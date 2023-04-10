@@ -23,9 +23,8 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- cdn JS boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
     <!-- CCS PERSO -->
     <link rel="stylesheet" href="App/portofolio.css">
     <!-- JAVASCRIPT PERSO -->
@@ -56,9 +55,12 @@
                             <div class="container row">
                                 <!-- liste Contact -->
                                 <ul>
-                                    <li><a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-                                            aria-controls="offcanvasBottom"><i class="bi bi-envelope-at-fill"></i>
-                                            Mail</a></li>
+                                    <li>
+                                        <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                            <i class="bi bi-envelope-at-fill"></i>
+                                            Mail
+                                        </a>
+                                    </li>
                                     <li><a href="https://github.com/KarimARFI" target="_blank"
                                             rel="noopener noreferrer nofollow"><i class="bi bi-github"></i> Git Hub</a>
                                     </li>
@@ -89,116 +91,151 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="ModalLabel">Les avantages de mon stage :</h1>
+                    <h1 class="modal-title fs-4 fw-bolder text-primary" id="ModalLabel">Les avantages de mon stage :</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <ul>
-                        <li><i class="bi bi-calendar3"> </i>Période du 3 juillet au 22 septembre 2023.</li>
-                        <li><i class="bi bi-file-earmark-text"> </i>Convention de stage de 3 mois. <i>(centre AFPA Paris
-                                12).</i></li>
-                        <li class="text-success fw-bold"><i class="bi bi-currency-euro"> </i>Non rémunéré et aucun frais
-                            !</li>
-                        <li><i class="bi bi-calendar-month"> </i>Un appoint durant les congés.</li>
-                        <li><i class="bi bi-speedometer"> </i>Validation rapide = plus de temps pour l'apprentissage de
-                            vos besoins et techno !</li>
-                    </ul>
+                    <ol>
+                        <li>
+                            <i class="bi bi-currency-euro"> </i>Non rémunéré et aucun frais !<br>
+                            <i>(financment et prise en charge total par Transition Pro)</i>
+                        </li>
+                        <li>
+                            <i class="bi bi-calendar3"> </i>Période du 3 juillet au 22 septembre 2023.
+                        </li>
+                        <li>
+                            <i class="bi bi-file-earmark-text"> </i>Convention de stage de 3 mois. Administratif géré par le centre AFPA Paris 12.</i>
+                        </li>
+                        <li>
+                            <i class="bi bi-calendar-month"> </i>Un appoint durant les congés d'été.
+                        </li>
+                        <li>
+                            <i class="bi bi-speedometer"> </i>Validation rapide = plus de temps pour l'apprentissage de vos besoins et techno !
+                        </li>
+                        <li>
+                            <i class="bi bi-calendar-check"> </i>La période des congés sera propice à l'intégration. De cette façon, en septembre, je serais opérationnel dès la rentrée.
+                        </li>
+                    </ol>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success"><a
-                            href="Source/Karim_ARFI_CV_concepteur_developpeur.pdf"
-                            download="Karim_ARFI_CV_concepteur_developpeur">Télécharger mon C.V</a></button>
+                    <button type="button" class="btn btn-primary">
+                        <i class="bi bi-envelope-at-fill"></i>
+                        <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                            Contactez-moi
+                        </a>
+                    </button>
+                    <button type="button" class="btn btn-success">
+                        <i class="bi bi-file-earmark-code"></i>
+                        <a href="Source/Karim_ARFI_CV_concepteur_developpeur.pdf" download="Karim_ARFI_CV_concepteur_developpeur">Télécharger mon C.V</a>
+                    </button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- ##############################  -->
-    <!-- ### OFFCANVAS  FORMULAIRE CONTACT ### -->
+    <!-- ### OFFCANVAS FORMULAIRE CONTACT ### -->
     <!-- ##############################  -->
-    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
-        aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasBottomLabel">Me contacter</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body small">
             <!-- ### formulaire ### -->
-            <form action="https://formsubmit.co/02533b05ee2576d44c5d174753fee5d9 " method="POST" class="row g-2" id="formContact">
-                <!-- Genre -->
+            <!-- <form action="https://formsubmit.co/02533b05ee2576d44c5d174753fee5d9 " method="POST" class="row g-2" name="formContact"> -->
+            <form action="#" method="POST" class="row g-2" name="formContact">
+                <span class="messInfo"></span>
+                <!-- Civilité -->
                 <div class="col-12 col-xl-2">
                     <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-person"></i></span>
                         <select class="form-select" id="civilite" name="civilite" required>
                             <option value="">Civilité</option>
                             <option value="Mme ">Madame</option>
-                            <option value="M. ">Monsieur</option>
+                            <option value="M.">Monsieur</option>
                         </select>
                     </div>
+                    <span class="messInfo">veuillez choisir une option</span>
                 </div>
                 <!-- Nom -->
                 <div class="col-12 col-sm-6 col-xl-2">
                     <!-- <label for="nom" class="form-label">Nom :</label> -->
                     <div class="input-group">
-                        <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-person-lines-fill"></i></span>
-                        <input type="text" class="form-control" id="nom" name="nom" name="tel" aria-describedby="inputGroupPrepend" placeholder="Nom"  minlength="3" maxlength="20" required>
+                        <span class="input-group-text" id="inputGroupPrepend"><i
+                                class="bi bi-person-lines-fill"></i></span>
+                        <input type="text" class="form-control" id="nom" name="nom" aria-describedby="inputGroupPrepend"
+                            placeholder="Nom" minlength="3" maxlength="20" required>
                     </div>
-                    <small></small>
+                    <span class="messInfo">minimum 3, maximum 20 caracères</span>
                 </div>
                 <!-- Société -->
                 <div class="col-12 col-sm-6 col-xl-3">
                     <!-- <label for="societe" class="form-label">Société :</label> -->
                     <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-buildings"></i></span>
-                        <input type="text" class="form-control" id="societe" name="societe" name="tel" aria-describedby="inputGroupPrepend" placeholder="Société" minlength="3" maxlength="20" required>
+                        <input type="text" class="form-control" id="societe" name="societe"
+                            aria-describedby="inputGroupPrepend" placeholder="Société" minlength="3" maxlength="20"
+                            required>
                     </div>
-                    <small></small>
+                    <span class="messInfo">minimum 3, maximum 20 caracères</span>
                 </div>
                 <!-- Téléphone -->
                 <div class="col-12 col-sm-6 col-xl-2">
                     <!-- <label for="tel" class="form-label">Téléphone :</label> -->
                     <div class="input-group">
-                        <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-telephone-fill"></i></span>
-                        <input type="tel" class="form-control" id="tel" name="tel" aria-describedby="inputGroupPrepend" placeholder="Téléphone" minlength="10" maxlength="10" required>
+                        <span class="input-group-text" id="inputGroupPrepend"><i
+                                class="bi bi-telephone-fill"></i></span>
+                        <input type="tel" class="form-control" id="tel" name="tel" aria-describedby="inputGroupPrepend"
+                            placeholder="Téléphone" minlength="10" maxlength="10" required>
                     </div>
-                    <small></small>
+                    <span class="messInfo">10 chiffres minimum</span>
                 </div>
                 <!-- Mail -->
                 <div class="col-12 col-sm-6 col-xl-3">
                     <!-- <label for="mail" class="form-label">E-mail:</label> -->
                     <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-envelope-at"></i></span>
-                        <input type="email" class="form-control" id="mail" name="mail" aria-describedby="inputGroupPrepend" placeholder="E-mail" minlength="10" maxlength="64" required>
+                        <input type="email" class="form-control" id="mail" name="mail"
+                            aria-describedby="inputGroupPrepend" placeholder="E-mail" minlength="10" maxlength="64"
+                            required>
                     </div>
-                    <small></small>
+                    <span class="messInfo">nom <b>@</b> domaine <b>•</b> ext</span>
                 </div>
                 <!-- Message -->
                 <div class="col-12">
                     <!-- <label for="message" class="form-label">Message :</label> -->
                     <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-chat-text"></i></i></span>
-                        <textarea class="form-control" id="message" name="message" placeholder="30 caractères minimum. 200 maximum." id="floatingTextarea" id="message" style="height: 100px" minlength="30" maxlength="200" required></textarea>
+                        <textarea class="form-control" id="message" name="message"
+                            placeholder="30 caractères minimum. 200 maximum." id="floatingTextarea" id="message"
+                            style="height: 100px" minlength="30" maxlength="200" required></textarea>
                     </div>
-                    <small></small>
+                    <span>nombre de caractères : <span id="nbrChar">0</span> / 2OO</span>
                 </div>
                 <!-- CheckBox -->
                 <div class="col-12">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="condition" name="condition" required>
+                        <input class="form-check-input" type="checkbox" id="condition" name="condition" required>
                         <label class="form-check-label" for="condition">Je valide les conditions.</label>
                         <!-- popover -->
-                        <i class="bi bi-info-circle" role="button" data-bs-toggle="popover" data-bs-custom-class="custom-popover" data-bs-trigger="hover focus" data-bs-title="Acceptation des conditions" data-bs-content="En validant le formulaire. Vous consentez à l'utilisation des informations fournie. Dans le but d'une prise de contact.">
+                        <i class="bi bi-info-circle" role="button" data-bs-toggle="popover"
+                            data-bs-custom-class="custom-popover" data-bs-trigger="hover focus"
+                            data-bs-title="Acceptation des conditions"
+                            data-bs-content="En validant le formulaire. Vous consentez à l'utilisation des informations fournie. Dans le but d'une prise de contact.">
                             infos
                         </i>
-                        <small></small>
                     </div>
+                    <span class="messInfo">Veuillez, lire et valider la case ci-dessus.</span>
                 </div>
                 <!-- renvoi a la page d'accueil -->
-                <input type="hidden" name="_next" value="https://karimarfi.github.io/Portfolio/">
+                <input type="hidden" id="_next" name="_next" value="https://karimarfi.github.io/Portfolio/">
                 <!-- Bouton -->
                 <div class="col-12">
-                    <button type="submit" class="btn btn-outline-success"  id="ToastBtn" name="btnValidation">Envoyer</button>
+                    <button type="submit" class="btn btn-secondary" id="btnValidation" name="btnValidation"
+                        disabled>Envoyer</button>
                 </div>
+                <span class="messInfo">Veuillez remplir les champs mentionné ci-dessus.</span>
             </form>
         </div> <!-- fin du offcanvas body -->
     </div> <!-- fin du OffCanvas -->
@@ -206,14 +243,14 @@
     <!-- TOAST  -->
     <!-- ##############################  -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div id="ToastDiv" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
                 <i class="bi bi-check-circle-fill me-3"></i>
                 <strong class="me-auto">E-mail envoyé</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
             <div class="toast-body">
-                Je vous remercie pour votre message.<br>Je reprendrais contact avec vous dès que possible.
+                Je vous remercie pour votre message.<br>Je reviendrais vers vous rapidement.
             </div>
         </div>
     </div>
@@ -317,7 +354,8 @@
                                 <h5 class="mt-0">Wolf Gang</h5>
                                 <p>Exercice avec carousel en jQuery, responsive, avec media YouTube. </p>
                                 <!-- Streched Link étire le lien pour qu'il soit actif sur tout le bloc parent en position relative-->
-                                <a href="Realisation/WolfGang/index.html" target="_blank" rel="follow" class="stretched-link">Voir l'exercice</a>
+                                <a href="Realisation/WolfGang/index.html" target="_blank" rel="follow"
+                                    class="stretched-link">Voir l'exercice</a>
                             </div>
                         </div>
                         <!-- 2nd cards -->
@@ -328,7 +366,8 @@
                             <div class="col-md-6 p-4 ps-md-0 text-light">
                                 <h5 class="mt-0">CreaSoul</h5>
                                 <p>Exercice en flex responsive : mobile, tablette et desktop. </p>
-                                <a href="Realisation/Creasoul/index.html" target="_blank" rel="follow" class="stretched-link">Voir l'exercice.</a>
+                                <a href="Realisation/Creasoul/index.html" target="_blank" rel="follow"
+                                    class="stretched-link">Voir l'exercice.</a>
                             </div>
                         </div>
                         <!-- 3eme cards -->
@@ -339,7 +378,8 @@
                             <div class="col-md-6 p-4 ps-md-0 text-light">
                                 <h5 class="mt-0">Realty RealtyGroup</h5>
                                 <p>Exercice avec gestion de sous menu.</p>
-                                <a href="Realisation/RealtyGroup/index.html" target="_blank" rel="follow" class="stretched-link">Voir l'exercice.</a>
+                                <a href="Realisation/RealtyGroup/index.html" target="_blank" rel="follow"
+                                    class="stretched-link">Voir l'exercice.</a>
                             </div>
                         </div>
                         <!-- 4eme cards -->
@@ -350,7 +390,8 @@
                             <div class="col-md-6 p-4 ps-md-0 text-light">
                                 <h5 class="mt-0">Cup of Tea</h5>
                                 <p>Exercice en media queries : mobile, desktop. </p>
-                                <a href="Realisation/CupTea/index.html" target="_blank" rel="follow" class="stretched-link">Voir l'exercice.</a>
+                                <a href="Realisation/CupTea/index.html" target="_blank" rel="follow"
+                                    class="stretched-link">Voir l'exercice.</a>
                             </div>
                         </div>
                         <!-- 5eme cards -->
@@ -361,7 +402,8 @@
                             <div class="col-md-6 p-4 ps-md-0 text-light">
                                 <h5 class="mt-0">Yoga</h5>
                                 <p>Exercice en flex responsive, avec formulaire de contact HTML. </p>
-                                <a href="Realisation/Yoga/index.html" target="_blank" rel="follow" class="stretched-link">Voir l'exercice.</a>
+                                <a href="Realisation/Yoga/index.html" target="_blank" rel="follow"
+                                    class="stretched-link">Voir l'exercice.</a>
                             </div>
                         </div>
                         <!-- 6eme cards -->
@@ -372,7 +414,8 @@
                             <div class="col-md-6 p-4 ps-md-0 text-light">
                                 <h5 class="mt-0">Fish and Chips</h5>
                                 <p>Exercice simple de design HTML CSS. </p>
-                                <a href="Realisation/FishChips/index.html" target="_blank" rel="follow" class="stretched-link">Voir l'exercice.</a>
+                                <a href="Realisation/FishChips/index.html" target="_blank" rel="follow"
+                                    class="stretched-link">Voir l'exercice.</a>
                             </div>
                         </div>
                         <!-- 7eme cards -->
@@ -383,7 +426,8 @@
                             <div class="col-md-6 p-4 ps-md-0 text-light">
                                 <h5 class="mt-0">Green Office</h5>
                                 <p>Exercice simple de design HTML CSS. </p>
-                                <a href="Realisation/Yoga/index.html" target="_blank" rel="follow" class="stretched-link">Voir l'exercice.</a>
+                                <a href="Realisation/Yoga/index.html" target="_blank" rel="follow"
+                                    class="stretched-link">Voir l'exercice.</a>
                             </div>
                         </div>
                         <!-- Fin des cards -->
@@ -722,13 +766,19 @@
     <footer>
         <!-- ### RESEAUX SOCIAUX ### -->
         <div id="social">
-            <a href="https://github.com/KarimARFI" target="_blank" rel="norefer noopener nofollow"><i
-                    class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/karim-arfi/" target="_blank" rel="norefer noopener nofollow"><i
-                    class="bi bi-linkedin"></i></a>
-            <a href="https://www.behance.net/aerokrea" target="_blank" rel="norefer noopener nofollow"><i
-                    class="bi bi-behance"></i></a>
-            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                <i class="bi bi-envelope-at-fill"></i>
+            </a>
+            <a href="https://github.com/KarimARFI" target="_blank" rel="norefer noopener nofollow">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/karim-arfi/" target="_blank" rel="norefer noopener nofollow">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.behance.net/aerokrea" target="_blank" rel="norefer noopener nofollow">
+                <i class="bi bi-behance"></i>
+            </a>
+            <!-- <a href=""><i class="bi bi-twitter"></i></a> -->
         </div>
         <!-- ### STRUCTURE ### -->
         <div id="structure">
@@ -749,6 +799,13 @@
                             href="Source/Karim_ARFI_CV_concepteur_developpeur.pdf">Curriculum vitae</a></li>
                     <li><i class="bi bi-brush"></i><a
                             href="Source/ARFI_Karim_Realisation_Graphique_mail.pdf">Réalisations graphique</a></li>
+                </ul>
+            </div>
+            <div>
+                <p><i class="bi bi-diagram-2"></i>Contact :</p>
+                <ul>
+                    <i class="bi bi-envelope-at-fill"></i>
+                    <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Contactez-moi</a>
                 </ul>
             </div>
             <div>

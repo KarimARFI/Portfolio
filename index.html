@@ -13,19 +13,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Portfolio Karim</title>
-    <!-- Chargement de favicon -->
+    <!-- Chargement du favicon -->
     <link rel="icon" type="image/svg" sizes="96x96" href="Source/Logo_AK.svg"> <!-- size doit être un multiple de 16 -->
     <!-- BOOTSTRAP CDN -->
     <!-- cdn icon bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- cdn basique bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- cdn JS boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-        </script>
-    <!-- CCS PERSO -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- CSS PERSO -->
     <link rel="stylesheet" href="App/portofolio.css">
     <!-- JAVASCRIPT PERSO -->
     <script src="App/portofolio.js" defer></script>
@@ -77,48 +74,45 @@
             <!-- #### HEADER FLEX INFO DROITE ### -->
             <div class="container col">
                 <p>Concepteur développeur d'applications</p>
-                <!-- Bouton modal stage -->
+                <!-- Bouton modal contact -->
                 <button type="button" class="btn d-block" data-bs-toggle="modal" data-bs-target="#Modal">
-                    Demande de stage <i class="bi bi-info-circle"></i>
+                    Contact <i class="bi bi-info-circle"></i>
                 </button>
             </div>
         </div>
     </header>
     <!-- ##############################  -->
-    <!-- ### MODAL STAGE ### -->
+    <!-- ### MODAL -> btn contact ### -->
     <!-- ##############################  -->
     <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
+                <!-- modal header -->
                 <div class="modal-header">
-                    <h1 class="modal-title fs-4 fw-bolder text-primary" id="ModalLabel">Les avantages de mon stage :</h1>
+                    <h1 class="modal-title fs-4 fw-bolder text-primary" id="ModalLabel">Mes atouts :</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <!-- modal body -->
                 <div class="modal-body">
-                    <ol>
+                    <ul>
                         <li>
-                            <i class="bi bi-currency-euro"> </i>Non rémunéré et aucun frais !<br>
-                            <i>(financment et prise en charge total par Transition Pro)</i>
+                            <i class="bi bi-person-arms-up"></i>
+                            Motivé,
                         </li>
-                        <li>
-                            <i class="bi bi-calendar3"> </i>Période du 3 juillet au 22 septembre 2023.
-                        </li>
-                        <li>
-                            <i class="bi bi-file-earmark-text"> </i>Convention de stage de 3 mois. Administratif géré par le centre AFPA Paris 12.</i>
-                        </li>
-                        <li>
-                            <i class="bi bi-calendar-month"> </i>Un appoint durant les congés d'été.
-                        </li>
-                        <li>
-                            <i class="bi bi-speedometer"> </i>Validation rapide = plus de temps pour l'apprentissage de vos besoins et techno !
-                        </li>
-                        <li>
-                            <i class="bi bi-calendar-check"> </i>La période des congés sera propice à l'intégration. De cette façon, en septembre, je serais opérationnel dès la rentrée.
-                        </li>
-                    </ol>
+                        <li><i class="bi bi-fire"></i>&nbsp;&nbsp; Passionné,</li>
+                        <li><i class="bi bi-hourglass-split"></i>&nbsp;&nbsp; Patient,</li>
+                        <li><i class="bi bi-hammer"></i>&nbsp;&nbsp; Travailleur,</li>
+                        <li><i class="bi bi-brush"></i>&nbsp;&nbsp; Capacité graphique élevée,</li>
+                        <li><i class="bi bi-emoji-smile"></i>&nbsp;&nbsp; Aimable,</li>
+                        <li><i class="bi bi-chat-quote"></i>&nbsp;&nbsp; Partage,</li>
+                        <li><i class="bi bi-people-fill"></i>&nbsp;&nbsp; Esprit d'équipe,</li>
+                        <li><i class="bi bi-fast-forward-btn"></i>&nbsp;&nbsp; Apprentissage rapide,</li>
+                        <li><i class="bi bi-mortarboard"></i>&nbsp;&nbsp; Envie d'apprendre continue,</li>
+                    </ul>
                 </div>
+                <!-- modal footer -->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
                         <i class="bi bi-envelope-at-fill"></i>
                         <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
                             Contactez-moi
@@ -136,6 +130,7 @@
     <!-- ##############################  -->
     <!-- ### OFFCANVAS FORMULAIRE CONTACT ### -->
     <!-- ##############################  -->
+    <!-- offcanvas venant du bas "bottom" -->
     <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasBottomLabel">Me contacter</h5>
@@ -162,10 +157,8 @@
                 <div class="col-12 col-sm-6 col-xl-2">
                     <!-- <label for="nom" class="form-label">Nom :</label> -->
                     <div class="input-group">
-                        <span class="input-group-text" id="inputGroupPrepend"><i
-                                class="bi bi-person-lines-fill"></i></span>
-                        <input type="text" class="form-control" id="nom" name="nom" aria-describedby="inputGroupPrepend"
-                            placeholder="Nom" minlength="3" maxlength="20" required>
+                        <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-person-lines-fill"></i></span>
+                        <input type="text" class="form-control" id="nom" name="nom" aria-describedby="inputGroupPrepend" placeholder="Nom" minlength="3" maxlength="20" required>
                     </div>
                     <span class="messInfo">minimum 3, maximum 20 caracères</span>
                 </div>
@@ -174,9 +167,7 @@
                     <!-- <label for="societe" class="form-label">Société :</label> -->
                     <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-buildings"></i></span>
-                        <input type="text" class="form-control" id="societe" name="societe"
-                            aria-describedby="inputGroupPrepend" placeholder="Société" minlength="3" maxlength="20"
-                            required>
+                        <input type="text" class="form-control" id="societe" name="societe" aria-describedby="inputGroupPrepend" placeholder="Société" minlength="3" maxlength="20" required>
                     </div>
                     <span class="messInfo">minimum 3, maximum 20 caracères</span>
                 </div>
@@ -186,8 +177,7 @@
                     <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend"><i
                                 class="bi bi-telephone-fill"></i></span>
-                        <input type="tel" class="form-control" id="tel" name="tel" aria-describedby="inputGroupPrepend"
-                            placeholder="Téléphone" minlength="10" maxlength="10" required>
+                        <input type="tel" class="form-control" id="tel" name="tel" aria-describedby="inputGroupPrepend" placeholder="Téléphone" minlength="10" maxlength="10" required>
                     </div>
                     <span class="messInfo">10 chiffres minimum</span>
                 </div>
@@ -196,9 +186,7 @@
                     <!-- <label for="mail" class="form-label">E-mail:</label> -->
                     <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-envelope-at"></i></span>
-                        <input type="email" class="form-control" id="mail" name="mail"
-                            aria-describedby="inputGroupPrepend" placeholder="E-mail" minlength="10" maxlength="64"
-                            required>
+                        <input type="email" class="form-control" id="mail" name="mail" aria-describedby="inputGroupPrepend" placeholder="E-mail" minlength="10" maxlength="64" required>
                     </div>
                     <span class="messInfo">nom <b>@</b> domaine <b>•</b> ext</span>
                 </div>
@@ -207,9 +195,7 @@
                     <!-- <label for="message" class="form-label">Message :</label> -->
                     <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-chat-text"></i></i></span>
-                        <textarea class="form-control" id="message" name="message"
-                            placeholder="30 caractères minimum. 200 maximum." id="floatingTextarea" id="message"
-                            style="height: 100px" minlength="30" maxlength="200" required></textarea>
+                        <textarea class="form-control" id="message" name="message" placeholder="30 caractères minimum. 200 maximum." id="floatingTextarea" id="message" style="height: 100px" minlength="30" maxlength="200" required></textarea>
                     </div>
                     <span>nombre de caractères : <span id="nbrChar">0</span> / 2OO</span>
                 </div>
@@ -222,7 +208,7 @@
                         <i class="bi bi-info-circle" role="button" data-bs-toggle="popover"
                             data-bs-custom-class="custom-popover" data-bs-trigger="hover focus"
                             data-bs-title="Acceptation des conditions"
-                            data-bs-content="En validant le formulaire. Vous consentez à l'utilisation des informations fournie. Dans le but d'une prise de contact.">
+                            data-bs-content="En validant le formulaire. Vous consentez à l'utilisation des informations fournie. Dans le cadre d'une prise de contact.">
                             infos
                         </i>
                     </div>
@@ -231,9 +217,9 @@
                 <!-- renvoi a la page d'accueil -->
                 <input type="hidden" id="_next" name="_next" value="https://karimarfi.github.io/Portfolio/">
                 <!-- Bouton -->
+                <input type="reset">
                 <div class="col-12">
-                    <button type="submit" class="btn btn-secondary" id="btnValidation" name="btnValidation"
-                        disabled>Envoyer</button>
+                    <button type="submit" class="btn btn-secondary" id="btnValidation" name="btnValidation" disabled>Envoyer</button>
                 </div>
                 <span class="messInfo">Veuillez remplir les champs mentionné ci-dessus.</span>
             </form>
@@ -348,7 +334,7 @@
                         <!-- 1er cards -->
                         <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
                             <div class="col-md-6 mb-md-0 p-md-4 imgReal">
-                                <img src="Realisation/WolfGang/wolfgang2.png" class="w-100 mt-3" alt="...">
+                                <img src="Realisation/WolfGang/wolfgang2.png" class="w-100 mt-3 mt-md-1" alt="...">
                             </div>
                             <div class="col-md-6 p-4 ps-md-0 text-light">
                                 <h5 class="mt-0">Wolf Gang</h5>
@@ -361,7 +347,7 @@
                         <!-- 2nd cards -->
                         <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
                             <div class="col-md-6 mb-md-0 p-md-4 imgReal">
-                                <img src="Realisation/Creasoul/creasoul.png" class=" w-100 mt-3" alt="...">
+                                <img src="Realisation/Creasoul/creasoul.png" class=" w-100 mt-3 mt-md-1" alt="...">
                             </div>
                             <div class="col-md-6 p-4 ps-md-0 text-light">
                                 <h5 class="mt-0">CreaSoul</h5>
@@ -373,7 +359,7 @@
                         <!-- 3eme cards -->
                         <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
                             <div class="col-md-6 mb-md-0 p-md-4 imgReal">
-                                <img src="Realisation/RealtyGroup/realty.png" class=" w-100 mt-3" alt="...">
+                                <img src="Realisation/RealtyGroup/realty.png" class=" w-100 mt-3 mt-md-1" alt="...">
                             </div>
                             <div class="col-md-6 p-4 ps-md-0 text-light">
                                 <h5 class="mt-0">Realty RealtyGroup</h5>
@@ -385,7 +371,7 @@
                         <!-- 4eme cards -->
                         <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
                             <div class="col-md-6 mb-md-0 p-md-4 imgReal">
-                                <img src="Realisation/CupTea/cupoftea2.png" class=" w-100 mt-3" alt="...">
+                                <img src="Realisation/CupTea/cupoftea2.png" class=" w-100 mt-3 mt-md-1" alt="...">
                             </div>
                             <div class="col-md-6 p-4 ps-md-0 text-light">
                                 <h5 class="mt-0">Cup of Tea</h5>
@@ -397,7 +383,7 @@
                         <!-- 5eme cards -->
                         <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
                             <div class="col-md-6 mb-md-0 p-md-4 imgReal">
-                                <img src="Realisation/Yoga/yoga2.png" class=" w-100 mt-3" alt="...">
+                                <img src="Realisation/Yoga/yoga2.png" class=" w-100 mt-3 mt-md-1" alt="...">
                             </div>
                             <div class="col-md-6 p-4 ps-md-0 text-light">
                                 <h5 class="mt-0">Yoga</h5>
@@ -409,7 +395,7 @@
                         <!-- 6eme cards -->
                         <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
                             <div class="col-md-6 mb-md-0 p-md-4 imgReal">
-                                <img src="Realisation/FishChips/fishChips.png" class=" w-100 mt-3" alt="...">
+                                <img src="Realisation/FishChips/fishChips.png" class=" w-100 mt-3 mt-md-1" alt="...">
                             </div>
                             <div class="col-md-6 p-4 ps-md-0 text-light">
                                 <h5 class="mt-0">Fish and Chips</h5>
@@ -421,13 +407,25 @@
                         <!-- 7eme cards -->
                         <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
                             <div class="col-md-6 mb-md-0 p-md-4 imgReal">
-                                <img src="Realisation/GreenOffice/greenOffice.png" class=" w-100 mt-3" alt="...">
+                                <img src="Realisation/GreenOffice/greenOffice.png" class=" w-100 mt-3 mt-md-1" alt="...">
                             </div>
                             <div class="col-md-6 p-4 ps-md-0 text-light">
                                 <h5 class="mt-0">Green Office</h5>
                                 <p>Exercice simple de design HTML CSS. </p>
                                 <a href="Realisation/Yoga/index.html" target="_blank" rel="follow"
                                     class="stretched-link">Voir l'exercice.</a>
+                            </div>
+                        </div>
+                        <!-- 8eme cards -->
+                        <div class="row m-3 bg-secondary bg-opacity-50 rounded-3 position-relative">
+                            <div class="col-md-6 mb-md-0 p-md-4 imgReal">
+                                <img src="Image/banniere beahance.png" class=" w-100 mt-3 mt-md-1" alt="...">
+                            </div>
+                            <div class="col-md-6 p-4 ps-md-0 text-light">
+                                <h5 class="mt-0">Réalisation graphique print</h5>
+                                <p>Portfolio graphique sur Behance. </p>
+                                <a href="https://www.behance.net/aerokrea" target="_blank" rel="follow"
+                                    class="stretched-link">Accéder à mon profil Behance.</a>
                             </div>
                         </div>
                         <!-- Fin des cards -->
@@ -485,10 +483,6 @@
                             <!-- BACK END -->
                             <span>Back-end</span>
                             <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
-                                <img src="Image/techno/UML.svg" alt="Icone Uml">
-                                <figcaption class="d-sm-inline-block">UML</figcaption>
-                            </figure>
-                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
                                 <img src="Image/techno/Java.svg" alt="Icone Java">
                                 <figcaption class="d-sm-inline-block">Java</figcaption>
                             </figure>
@@ -518,7 +512,7 @@
                                 <img src="Image/techno/GitHub.svg" alt="Icone GitHub">
                                 <figcaption class="d-sm-inline-block">GitHub</figcaption>
                             </figure>
-                            <span>projet</span>
+                            <span>Gestion et Concepetion de projet</span>
                             <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
                                 <img src="Image/techno/Trello.svg" alt="Icone Trello">
                                 <figcaption class="d-sm-inline-block">Trello</figcaption>
@@ -526,6 +520,10 @@
                             <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
                                 <img src="Image/techno/Lucidchart.svg" alt="Icone Lucidchart">
                                 <figcaption class="d-sm-inline-block">Lucidchart</figcaption>
+                            </figure>
+                            <figure class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                                <img src="Image/techno/UML.svg" alt="Icone Uml">
+                                <figcaption class="d-sm-inline-block">UML</figcaption>
                             </figure>
                             <!-- ENVIRONEMENT -->
                             <span>Environement</span>
@@ -607,6 +605,13 @@
                         <p><strong>Parcour profesionnel :</strong></p>
                         <ul>
                             <li>
+                                <b>Juill - Août 2023 :</b> Stagiaire : <i>Numérilis ®</i>
+                                <ul>
+                                    <li>Réalisation d'un cahier des charges, conception, gestion de projet.</li>
+                                    <li>Développement d'un module bancaire, de traitement de fichier xml.</li>
+                                </ul>
+                            </li>
+                            <li>
                                 <b>2008 - présent :</b> Conseiller en communication print et digital : <i>Copy-Top ®</i>
                                 <ul>
                                     <li>Conseil, gestion et accompagnement de projet.</li>
@@ -630,8 +635,7 @@
                         <p><strong>Formation diplomante :</strong></p>
                         <ul>
                             <li>
-                                <b>2023 Bac +3 :</b> <i class="text-success">EN COURS DE FORMATION</i> Concepteur
-                                développeur d'application. <b>Spécialité : Java</b>
+                                <b>2023 Bac +3/4 :</b>Concepteur développeur d'application. <b>Spécialité : Java</b>
                                 <ul>
                                     <li><i>RNCP 31678 AFPA Paris 12.</i></li>
                                 </ul>
@@ -719,41 +723,13 @@
                         <p><strong>Le pourquoi du comment !</strong></p>
                         <img src="Image/image_bio_sepia.png" alt="">
                         <ul>
-                            <li><b>Bonjour ! Êtes-vous perdu ? "non" !</b><br>Si vous êtes arrivé jusqu'ici, c'est qu'il
-                                y a quelque chose qui vous à plus ? Alors je tiens à vous remercier de lire ces quelques
-                                lignes de présentation.</li>
-                            <li>Étant considérer à peine comme junior dans le domaine. J'ai bien consciense qu'il me
-                                reste beaucoup de chemin à parcourir pour apporter une aide efficace. Mais si vous lisez
-                                ceci. C'est que vous êtes surement la personne qui m'offrira la chance de lui apporter
-                                cette aide.</li>
-                            <li>Les nouvelles technologie et le graphisme dans la peau depuis mon adolescence. Tous a
-                                commencé par un petit modem Olitec 56K et sa "douce" musique de connexion <audio
-                                    src="Source/modem.mp3" controls preload="auto"></audio> <i
-                                    class="bi bi-emoji-laughing"></i> Cette nouvelle technologie "internet" apportant
-                                toujours plus d'informations en accés direct chez soi. Celle-ci m'a ouvert un champs des
-                                possibles, dans lequel j'ai plongé et découvert un monde d'échange et de connaissances.
-                                Le temps passant, naviguant sur la "toile". Passionné par le dessin et le graphisme.
-                                Sauvegardant tous un tas d'images manga. pour les redessiner sur logiciels de l'epoque.
-                            </li>
-                            <li>Je me suis mis assez tardivement à la création de page web. J'ai réalisé mon 1er site
-                                web <i>(2001 sous dreamweaver)</i> lors de ma création d'entreprise. Plus pour faire de
-                                la promotion de ma société plus que du dévelopement. Manipulant aussi Illustrator,
-                                InDesign et Photoshop. Je suis resté sur un logiciel de la suite Adobe qui m'était
-                                familière. Avec mes connaissances trop basiques en conception web. Mon site est resté
-                                sur le modèle d'un site vitrine standard. je me suis rapidement rendu compte que ce
-                                logiciel ne m'apporterais pas ce que recherchais.</li>
-                            <li> Utilisant de plus en plus les logiciels graphique. J'ai pris la voie du graphisme
-                                print. Pour lier ma passion à un métier pouvant rendre "matériel" mes projets numérique.
-                                Je travaille depuis 15 ans en tant que conseillé print et digital. Ce qui m'a permis de
-                                créer et d'imprimer certain de mes projets.</li>
-                            <li>Le monde évoluant, une technologie remplacant la précédente. J'ai décidé de me former à
-                                la programmation web. Avec une première formation en tant que développeur/intégrateur
-                                qui m'a permis d'acquérir les compétences nécessaire pour développer des sites vitrine
-                                et interactif, attrayant. Aujourd'hui Je continue sur une formation de concepteur
-                                développeur d'applications, spécialisé en Java. </li>
-                            <li>Ainsi le développement web m'apporte satisfaction sur les deux domaines. Aussi bien sur
-                                la partie visuelle: front-end, très lié au graphisme et sur la partie back-end:
-                                fonctionnel, lié à l'interaction.</li>
+                            <li><b>Bonjour</b><br>Si vous êtes parvenu jusqu'ici, c'est qu'il y a une chose qui vous a intéréssé.<br> Alors je tiens à vous remercier de lire ces quelques lignes de présentation.</li>
+                            <li>Étant considérer comme junior dans le domaine. J'ai bien consciense qu'il me reste beaucoup de chemin à parcourir pour apporter une aide efficace à mes collégue développeur. Mais si vous lisez ceci. C'est que vous êtes surement la personne qui m'offrira la chance de lui apporter cette aide.</li>
+                            <li>Les nouvelles technologie et le graphisme dans la peau depuis mon adolescence. Tous a commencé par un petit modem Olitec 56K et sa "douce" musique de connexion <audio src="Source/modem.mp3" controls preload="auto"></audio> <i class="bi bi-emoji-laughing"></i> Cette nouvelle technologie "internet" apportant toujours plus d'informations en accés direct chez soi. Celle-ci m'a ouvert un champs des possibles, dans lequel j'ai plongé et découvert un monde d'échange et de connaissances. Le temps passant, naviguant sur la "toile". Passionné par le dessin et le graphisme. Sauvegardant tous un tas d'images manga. pour les redessiner sur logiciels de l'époque.</li>
+                            <li>J'ai réalisé mon 1er site web <i>(2001 sous dreamweaver)</i> lors de ma création d'entreprise. Plus, pour faire la promotion de ma société que du dévelopement. Manipulant Illustrator, InDesign et Photoshop. Et me perfectionnant sur la suite Adobe qui m'était familière. Avec mes connaissances basiques en conception web. Mon site est resté sur le modèle d'un site vitrine.</li>
+                            <li> Utilisant de plus en plus les logiciels graphique. J'ai pris la voie du graphisme print. Pour lier ma passion à un métier pouvant rendre "matériel" mes projets numérique. Je travaille depuis 15 ans en tant que conseillé print et digital. Ce qui m'a permis de créer et d'imprimer certain de mes projets.</li>
+                            <li>Le monde évoluant, une technologie remplacant la précédente. J'ai décidé de me former à la programmation web. Avec une première formation en tant que développeur/intégrateur qui m'a permis d'acquérir les compétences nécessaire pour développer des sites interactif, attrayant. j'ai ensuite continué sur une formation pour devenir concepteur développeur d'apllications Java.</li>
+                            <li>Ainsi le développement web m'apporte satisfaction sur les deux domaines. Aussi bien sur la partie graphique : front-end, très lié au graphisme et sur la partie back-end : fonctionnel, lié à l'interaction.</li>
                         </ul>
                     </div>
                 </div>

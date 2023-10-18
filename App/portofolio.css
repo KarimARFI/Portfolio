@@ -334,12 +334,14 @@ footer a:hover{
 #social i{
     margin: 0 2vmin
 }
-#structure div{
-    padding: 1rem;
-}
 /* ### STRUCTURE ### */
 #structure{
     font-size: 1rem;
+    max-width: 50%;
+    margin: 0 auto;
+}
+#structure div{
+    padding: 1rem;
 }
 #structure div p{
     font-weight: 600;
@@ -364,8 +366,9 @@ footer a:hover{
 #structure div ul li i{
     margin-right: 0.5rem;
 }
-#structure div:nth-child(4), #structure div:nth-child(5){
-    visibility: hidden;
+#structure div:nth-last-child(-n+2){
+    /* visibility: hidden; */
+    display: none;
 }
 /* ### BOUTON TOP ### */
 #top{
@@ -510,13 +513,16 @@ footer a:hover{
 
 /* xxl = Extra-Extra-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+}
+/* xxl = Extra-Extra-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1921px) {
     #Modal{
         --bs-modal-width: 700px;
         font-size: xx-large;
         line-height: 3rem;
     }
     #Modal .modal-body{
-        line-height: 2rem;
+        line-height: 3rem;
     }
     #Modal .modal-footer button{
         font-size: x-large;

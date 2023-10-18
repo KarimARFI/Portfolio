@@ -76,7 +76,7 @@ formArray.addEventListener('submit', (event) => {
         return;
     }
     if (!regexEmail.test(email)) {
-        afficheErreur('L\'adresse email n\'est pas valide. Elle doit être de type : nom @ domaine . ext');
+        afficheErreur('L\'adresse email n\'est pas valide.\n Elle doit être composé de :\n "3 caractères" @ "3 caractères" "un point" "minimum 2 caractères"');
         return;
     }
     if (message.length < 30 || message.length > 200) {

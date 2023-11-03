@@ -337,11 +337,13 @@ footer a:hover{
 /* ### STRUCTURE ### */
 #structure{
     font-size: 1rem;
-    max-width: 50%;
+    max-width: 100%;
     margin: 0 auto;
 }
 #structure div{
     padding: 1rem;
+    max-width: max-content;
+    margin: 0 auto;
 }
 #structure div p{
     font-weight: 600;
@@ -370,6 +372,7 @@ footer a:hover{
     /* visibility: hidden; */
     display: none;
 }
+
 /* ### BOUTON TOP ### */
 #top{
     color: darkslategray;
@@ -513,6 +516,12 @@ footer a:hover{
 
 /* xxl = Extra-Extra-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+    #structure{
+        max-width: fit-content;
+    }
+    #structure div{
+        margin : 0 20px; 
+    }
 }
 /* xxl = Extra-Extra-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1921px) {
